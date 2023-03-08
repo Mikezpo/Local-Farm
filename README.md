@@ -15,7 +15,7 @@ The projects in my portfolio were built using the following technologies:
 - HTML
 - CSS
 
-In the near future, I will be incorporating projects built with:
+In the near future, I will be incorporating:
 - JavaScript
 
 
