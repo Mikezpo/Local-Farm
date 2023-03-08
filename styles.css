@@ -1,0 +1,889 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/* I'm giving a base font-size of 62.5% which equals to 10px. Therefore, 1em = 10px. This will allow a simpler calculation of font-sizes, and provide a better user interactivity on different devices and being user friendly. */
+
+html {
+  font-size: 62.5%;
+  color: black;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 100;
+  line-height: 2;
+}
+
+body {
+  padding: 0;
+  /* background: #dbe2ef; */
+}
+
+/* -------- FONTS -------- */
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 3em 0;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+li {
+  font-size: 1.4rem;
+}
+
+input,
+button {
+  font-size: 1.2rem;
+}
+
+main .buttonSearch {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+main span {
+    font-weight: bold;
+}
+
+.howItWorksSection a {
+    font-size: 1.2rem;
+}
+
+.getStarted, .getStarted a {
+    font-size: 1.2rem;
+}
+
+.foodWasteText > a {
+    font-size: 1.2rem;
+}
+
+.recipes a {
+    font-size: 1.2rem;
+}
+
+.selectRecipes a {
+    font-size: 1.4rem;
+}
+
+.johnSmithOne {
+    font-size: 1.7rem;
+}
+
+.johnSmithTwo {
+    font-size: 1.2rem;
+}
+
+.contactPhone p, .contactEmail p {
+    font-size: 2.2rem;
+}
+
+.newsletter {
+    font-size: 1.6rem;
+}
+
+.newsletterInput {
+    font-size: 1.3rem;
+}
+
+.footerList li {
+    font-size: 1.1rem;
+}
+
+.socialMedia p {
+    font-size: 2rem;
+}
+
+/* -------- ROOT COLORS -------- */
+
+:root {
+  --blue-color: rgb(52, 116, 212);
+  --blue-color-two: #7bd4ff;
+  --blue-white-color: #e8fcff;
+  --cyan-color: rgb(170, 220, 242);
+  --cyan-color-two: rgba(170, 220, 242, 1);
+  --grey-color-one: rgba(220, 221, 227, 0.377);
+  --grey-color-two: rgba(220, 221, 227, 0.438);
+  --grey-color-three: rgba(220, 221, 227, 0.712);
+  --grey-color-four: rgba(220, 221, 227, 0.877);
+  --orange-color: rgb(252, 122, 0);
+  --yellow-color: rgba(233, 227, 148, 0.5984987745098039) 100%;
+
+}
+
+/* -------- GENERAL CODE -------- */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+a:hover {
+  border-bottom: 2px solid rgb(252, 122, 0);
+}
+
+.howItWorksSection,
+.boxSizes,
+.boxDescription,
+.wasteFoodSection,
+.localFarms,
+.recipes,
+.contactUs,
+.extraInfo {
+  padding: 3em 4em;
+}
+
+
+/* ----------- IMAGES ----------- */
+
+img {
+  object-fit: cover;
+  width: 100px;
+}
+
+/* -------- NAVBAR -------- */
+
+.navBar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2em 0;
+    background: var(--grey-color-one);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.navBar:hover {
+    background: var(--grey-color-three);
+}
+
+.navBar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar h1 {
+    padding-right: 1em;
+    margin-left: 1em;
+}
+
+.signAndLog {
+    display: flex;
+}
+.account {
+    margin-left: 2em;
+}
+
+.webPath {
+    margin-right: 2em;
+}
+
+li {
+    margin-left: 1em;
+}
+
+/* -------- MAIN SECTION -------- */
+
+main {
+    background: url("https://images.unsplash.com/photo-1498408040764-ab6eb772a145?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2344&q=80");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0px -100px;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .container {
+      padding: 4em 2em;
+  }
+
+  .sectionOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+main h2 {
+    padding-bottom: 3em;
+}
+
+main h3 {
+    padding-bottom: 1em;
+}
+
+main p, main span {
+    padding-bottom: 1.5em;
+}
+
+main input {
+    height: 3rem;
+    width: 15rem;
+    text-align: center;
+  }
+  
+  main .inputBox {
+    border: 1px solid rgb(30, 61, 95);
+  }
+
+  main .inputBox:focus {
+    outline: none;
+    box-shadow: 0 0 20px #9ecaed;
+  }
+  
+  main .buttonSearch {
+    height: 3rem;
+    width: 15rem;
+    padding: 5px;
+    text-align: center;
+    margin-left: -1%;
+    border: 1px solid rgb(30, 61, 95);
+    color: rgb(30, 61, 95);
+    background: none;
+    cursor: pointer;
+    margin-bottom: 2em;
+  }
+  
+  main .buttonSearch:hover {
+    color: white;
+    background-color: rgb(252, 122, 0);
+    box-shadow: 0 0 20px #9ecaed;
+  }
+
+input {
+    caret-color: var(--blue-color);
+  }
+
+
+/* -------- HOW IT WORKS SECTION -------- */
+
+.howItWorks {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+  }
+
+  .orderProcess {
+    margin: 0 2em;
+    min-width: 10em;
+    max-width: 30em;
+  }
+
+  .orderProcess img {
+    width: clamp(10rem, 0.5vw, 20rem);
+  }
+
+  .orderProcess h4 {
+      padding: 1.5em 0;
+  }
+
+  .orderProcess p {
+      padding-bottom: 1em;
+  }
+
+  .buttonLearnMore {
+    text-align: center;
+    display: block;
+    padding-top: 3em;
+    border: 1px solid rgb(30, 61, 95);
+    padding: 5px;
+    color: rgb(252, 122, 0);
+    font-weight: bold;
+    width: 10rem;
+    margin: 0 auto 2em auto;
+  }
+  
+  .buttonLearnMore:hover {
+    color: white;
+    border: 1px solid rgb(30, 61, 95);
+    background-color: rgb(30, 61, 95);
+    box-shadow: 0 0 20px #9ecaed;
+  }
+
+/* -------- BOX SECTION -------- */
+
+.boxSizes {
+    background-image: url("https://images.unsplash.com/photo-1511735643442-503bb3bd348a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .containerTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 60em;
+    margin: 0 auto 4em auto;
+  }
+
+  .boxSizes h2 {
+    text-align: center;
+    padding-bottom: 3em;
+  }
+
+  .box {
+    width: 25em;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(220, 221, 227, 0.438);
+  }
+
+  .boxColumn:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 20px #9ecaed;
+  }
+
+  .box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .box h3 {
+      padding-bottom: 1em;
+  }
+
+  .getStartedA {
+    margin-top: 3em;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 1px solid rgb(30, 61, 95);
+    padding: 5px;
+    width: 10rem;
+    cursor: pointer;
+  }
+
+  .getStartedA a {
+      border: none;
+      color: rgb(252, 122, 0);
+  }
+
+  .getStartedA:hover {
+    color: white;
+    border: 1px solid rgb(30, 61, 95);
+    background-color: rgb(30, 61, 95);
+    box-shadow: 0 0 20px #9ecaed;
+  }
+
+/* -------- FRUIT & VEGGIE BOXES, VEGGIE BOXES AND FRUIT BOX -------- */
+
+.boxDescription {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.boxDescription > h2 {
+    margin: 0 1em;
+}
+
+.boxDescription > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40em;
+    text-align: center;
+    margin: 0 2em 6em 2em;
+}
+
+.fruitVeggBox {
+    background-image: url("https://images.unsplash.com/photo-1606757389667-45c2024f9fa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-position: -400px -400px;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+.fruitVeggBox, .veggieBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+
+.fruitVeggContainer, .veggieContainer, .fruitContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4em 2em 4em 2em;
+    max-width: 30em;
+    background-color: rgba(220, 221, 227, 0.897);
+    padding: 2em;
+}
+
+.fruitVeggContainer:hover, .veggieContainer:hover, .fruitContainer:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 20px #9ecaed;
+}
+
+.priceBox {
+    margin-top: 2em;
+    margin-bottom: -1.5em;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.veggieBox {
+    background-image: url("https://images.unsplash.com/photo-1587334207407-deb137a955ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80");
+    background-position: -150px -650px;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+.fruitBox {
+    background-image: url("https://images.unsplash.com/photo-1622921491193-345ffb510f6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80");
+    background-position: -650px -350px;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.fruitBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2em 0;
+}
+
+/* -------- FOOD WASTE -------- */
+
+.wasteFoodSection {
+    width: 100%;
+    padding: 3em 0;
+  }
+.foodWaste {
+    text-align: left;
+}
+
+.wasteFoodSection > h2 {
+    margin: 0 1em;
+}
+  .foodWasteText h2 {
+    padding-bottom: 3rem;
+    text-align: left;
+  }
+  
+  .foodWaste {
+    background-image: url("https://images.unsplash.com/photo-1571161933267-9a16444371ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: minmax(200px, 60%) minmax(150px, 40%);
+    padding: 0 4rem;
+  }
+
+  .foodWasteText {
+      color: white;
+      padding-bottom: 9em;
+  }
+
+  .foodWasteText a {
+      color: white;
+  }
+
+  
+
+/* -------- LOCAL FARMS IMAGES AND RECIPES -------- */
+
+.localFarms > p, .recipes > p {
+    max-width: 50rem;
+    text-align: center;
+    margin: -4rem auto 4rem auto;
+}
+
+.recipes > h3 {
+    max-width: 50rem;
+    text-align: center;
+    margin: 4rem auto;
+}
+
+.recipes > .getStartedA {
+    width: 20rem;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.recipes > .getStartedA a {
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+.freshFarm, .recipesImages{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.freshFarm img, .recipesImages img{
+    width: 30rem;
+    height: 30rem;
+    margin: 2rem;
+    object-fit: cover;
+}
+
+.freshFarm img:hover, .recipesImages img:hover {
+    box-shadow: 0 5px 20px #9ecaed;
+}
+
+.selectRecipes ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+
+.selectRecipes li {
+    border: 1px solid rgb(30, 61, 95);
+    padding: 1rem 2rem;
+    margin: 1rem;
+}
+
+.selectRecipes li:hover {
+    color: white;
+    background: rgb(252, 122, 0);
+    border: 1px solid rgb(252, 122, 0);
+    box-shadow: 0 5px 20px #9ecaed;
+    cursor: pointer;
+}
+
+.selectRecipes li:hover > a {
+    color: white;
+}
+
+.selectRecipes a {
+    border: none;
+}
+
+/* -------- COSTUMER REVIEWS -------- */
+
+.costumerReviewDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .costumerReview .johnSmith {
+    width: clamp(30rem, 1.5vw, 20rem);
+    border-radius: 50%;
+    margin-bottom: 4rem;
+  }
+
+  .fiveStar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 2rem;
+      max-width: 60rem;
+      
+    text-align: center;
+    padding-top: 4rem;
+  }
+
+  .fiveStar img {
+      margin: 0 1rem;
+      width: clamp(5rem, .5vw, 10rem);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .johnSmithReview {
+      max-width: 40rem;
+      margin: 6rem 2rem 0 2rem;
+      text-align: center;
+  }
+
+
+/* -------- CONTACT US AND FOOTER -------- */
+
+.contactUs {
+    padding-top: 20px;
+    margin-top: 60px;
+    background-color: rgb(30, 61, 95);
+    background-image: linear-gradient(360deg, rgb(30, 61, 95) 0%, #e8fcff 100%);
+  }
+
+.contactUs h2 {
+    margin-bottom: -6rem;
+}
+
+  .contactUsDiv {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .contactPhone, .contactEmail {
+      max-width: 25rem;
+      margin: 0 4rem;
+  }
+
+.contactEmail a {
+    color: rgb(231, 213, 108);
+}
+  .contactUsDiv img {
+      width: 10rem;
+      margin: 5rem 0 0 0;
+  }
+
+.newsletter span {
+    text-align: center;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+}
+
+.newsletter input {
+    height: 3rem;
+    width: 15rem;
+    text-align: center;
+    
+}
+
+.formBox {
+    display: flex;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.newsletter .newsletterInput {
+    border: 1px solid rgb(170, 220, 242);
+}
+
+.newsletter .newsletterInput:focus {
+    outline: none;
+    box-shadow: 0 0 20px #9ecaed;
+}
+
+.newsletterButton {
+    height: 3rem;
+    width: 15rem;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid rgb(30, 61, 95);
+    color: white;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+
+.newsletterButton:hover {
+    color: white;
+    background-color: rgb(252, 122, 0);
+    box-shadow: 0 0 20px #9ecaed;
+}
+
+footer {
+    background: rgb(30, 61, 95);
+    border-top: 1px solid white;
+}
+
+footer a {
+    color: white;
+    font-weight: 600;
+  }
+
+.footerBoxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .socialMedia {
+    max-width: 40rem;
+    text-align: center;
+    margin: 6rem auto 2rem auto;
+  }
+  
+  .socialMedia p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .socialMedia img {
+    width: 5rem;
+    margin: 1rem;
+  }
+  
+  .footerList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 2rem;
+    padding: 40px 10px;
+    width: 100%
+  }
+  
+  .footerList ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footerList li {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 1rem 2rem;
+  }
+  
+  p.registered {
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 600;
+    color: white;
+    border-top: 1px solid white;
+  }
+
+  .registered a {
+      color: rgb(252, 122, 0);
+  }
+
+/* -------- MEDIA QUERIES -------- */
+
+@media screen and (max-width: 900px) {
+    .foodWaste {
+        display: block;
+    }
+    .foodWasteText {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 40em;
+    }
+    .foodWasteText h2 {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 670px) {
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+        padding-left: 1em;
+    }
+    .account {
+        margin: 0;
+        min-width: 0px;
+    }
+    .webPath {
+        margin-right: 1em;
+    }
+    li {
+        margin-left: 0.5em;
+    }
+    .containerTwo {
+        flex-direction: column;
+        width: 100%;
+    }
+    .boxImage {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    .webPath {
+        visibility: hidden;
+    }
+    .account {
+        display: flex;
+        
+        min-width: 100%;
+        padding-right: 3em;
+        
+    }
+    .signAndLog {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2em;
+    }
+    .container {
+        padding-top: 2em;
+    }
+    .howItWorks {
+        flex-direction: column;
+    }
+    .orderProcess {
+        margin: 0 auto;
+        display: block;
+        min-width: 10em;
+      }
+    
+}
+
+@media screen and (max-width: 360px) {
+    
+    .account {
+        /* position: relative; */
+        flex-direction: column;
+    }
+    .container {
+        padding-top: 2em;
+    }
+}
