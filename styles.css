@@ -4,19 +4,6 @@
   padding: 0;
 }
 
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-
-.clear {
-  clear: both;
-}
-
 /* I'm giving a base font-size of 62.5% which equals to 10px. Therefore, 1em = 10px. This will allow a simpler calculation of font-sizes, and provide a better user interactivity on different devices and being user friendly. */
 
 html {
@@ -55,6 +42,10 @@ h4 {
 
 p {
   font-size: 1.5rem;
+}
+
+span {
+  font-size: 1.4rem;
 }
 
 li {
@@ -377,13 +368,13 @@ input {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgba(220, 221, 227, 0.438);
+  background-color: rgba(255, 255, 255, 0.733);
 }
 
 .boxColumn:hover {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 5px 20px #9ecaed;
-  transform: scale(1.1);
+  transform: scale(1.0);
 }
 
 .box img {
@@ -398,6 +389,7 @@ input {
 
 .getStartedA {
   margin-top: 3em;
+  color: rgb(252, 122, 0);
   font-weight: bold;
   font-size: 1.2rem;
   border: 1px solid rgb(30, 61, 95);
@@ -406,17 +398,13 @@ input {
   cursor: pointer;
 }
 
-.getStartedA a {
-  border: none;
-  color: rgb(252, 122, 0);
-}
-
 .getStartedA:hover {
   color: white;
   border: 1px solid rgb(30, 61, 95);
   background-color: rgb(30, 61, 95);
   box-shadow: 0 0 20px #9ecaed;
 }
+
 
 /* -------- FRUIT & VEGGIE BOXES, VEGGIE BOXES AND FRUIT BOX -------- */
 
@@ -445,6 +433,7 @@ input {
   background-repeat: no-repeat;
   background-size: auto;
 }
+
 .fruitVeggGroup,
 .veggGroup {
   max-width: 200em;
@@ -471,8 +460,10 @@ input {
   align-items: center;
   margin: 4em 2em 4em 2em;
   max-width: 30em;
-  background-color: rgba(220, 221, 227, 0.897);
+  background-color: rgba(255, 255, 255, 0.959);
   padding: 2em;
+  border-radius: 16px;
+  box-shadow: 0 2px 5px #9ecaed;
 }
 
 .fruitVeggContainer:hover,
@@ -480,6 +471,7 @@ input {
 .fruitContainer:hover {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 5px 20px #9ecaed;
+  transform: scale(1.1);
 }
 
 .priceBox {
@@ -517,15 +509,13 @@ input {
   width: 100%;
   padding: 3em 0;
 }
+
 .foodWaste {
   text-align: left;
 }
 
-.wasteFoodSection > h2 {
-  margin: 0 1em;
-}
 .foodWasteText h2 {
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   text-align: left;
 }
 
@@ -538,13 +528,46 @@ input {
   padding: 0 4rem;
 }
 
-.foodWasteText {
-  color: white;
-  padding-bottom: 9em;
+.quoteAbout {
+  margin: 0 auto;
+  max-width: 60rem;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-bottom: 6rem;
 }
 
-.foodWasteText a {
+.quoteAuthor {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.foodWasteText {
   color: white;
+  padding-bottom: 9rem;
+}
+
+.foodWasteText > p {
+  padding-bottom: 3rem;
+}
+
+.moreAboutMission {
+  background: rgb(30, 61, 95);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: 1px solid rgb(30, 61, 95);
+  padding: 1rem 2rem;
+  width: 10rem;
+  cursor: pointer;
+}
+
+.moreAboutMission:hover {
+  color: white;
+  border: 1px solid rgb(30, 61, 95);
+  background-color: rgb(30, 61, 95);
+  box-shadow: 0 0 20px #9ecaed;
 }
 
 /* -------- LOCAL FARMS IMAGES AND RECIPES -------- */
