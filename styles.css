@@ -733,7 +733,6 @@ input {
 
 .contactEmail a:hover {
   border: none;
-  transform: scale(1.1);
 }
 
 .contactUsDiv img {
@@ -809,12 +808,14 @@ footer a {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  border: 1px solid red;
 }
 
 .socialMedia {
-  max-width: 40rem;
+  max-width: 80rem;
   text-align: center;
   margin: 6rem auto 2rem auto;
+  border: 1px solid red;
 }
 
 .socialMedia p {
@@ -824,7 +825,7 @@ footer a {
 }
 
 .socialMedia img {
-  width: 5rem;
+  width: 3rem;
   margin: 1rem;
 }
 
@@ -840,14 +841,15 @@ footer a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 2rem;
-  padding: 40px 10px;
+  padding: 2rem;
   width: 100%;
 }
 
 .footerList ul {
   display: flex;
-  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: wrap;
 }
@@ -856,6 +858,10 @@ footer a {
   font-size: 1.1rem;
   font-weight: bold;
   margin: 1rem 2rem;
+}
+
+.footerList li:hover {
+  transform: scale(1.1);
 }
 
 p.registered {
@@ -867,8 +873,11 @@ p.registered {
 }
 
 .registered a {
-  color: rgb(252, 122, 0);
   border: none;
+}
+
+.registered a:hover {
+  color: var(--orange-color);
 }
 
 /* -------- MEDIA QUERIES -------- */
