@@ -711,19 +711,23 @@ input {
 
 .contactUsDiv {
   margin: 0 auto;
-  max-width: 70rem;
+  max-width: 90rem;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
   text-align: center;
+  border: 1px solid red;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
   border: 1px solid red;
 }
 
 .contactPhone,
 .contactEmail {
-  width: 25rem;
-  margin: 0 4rem;
+  width: 20rem;
+  margin: 0 auto;
   border: 1px solid red;
 }
 
@@ -736,9 +740,56 @@ input {
 }
 
 .contactUsDiv img {
-  width: 6rem;
-  margin: 3rem 0;
+  width: 5rem;
+  margin: 3rem 0 1rem 0;
 }
+
+/* FORM */
+
+.formSection {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.formSection input, textarea {
+  width: 80%;
+  padding: 1rem 0 1rem 1rem;
+  margin: 1rem 0;
+  border-radius: 16px;
+  border: 1px solid var(--blue-dark-color);
+}
+
+.formSection input:focus, textarea:focus {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+
+#buttonBlue {
+  cursor: pointer;
+  background: var(--blue-dark-color);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#buttonBlue:hover {
+  background: var(--orange-color);
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+#buttonBlue:focus {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+/* NEWSLETTER */
 
 .newsletter span {
   text-align: center;
@@ -820,7 +871,6 @@ footer a {
   max-width: 80rem;
   text-align: center;
   margin: 6rem auto 2rem auto;
-  border: 1px solid red;
 }
 
 .socialMedia p {
