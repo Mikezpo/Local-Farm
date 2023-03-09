@@ -767,6 +767,9 @@ input {
 
 .newsletter .newsletterInput {
   border: 1px solid rgb(170, 220, 242);
+  height: 3rem;
+  width: 15rem;
+  text-align: center;
 }
 
 .newsletter .newsletterInput:focus {
@@ -789,8 +792,10 @@ input {
 .newsletterButton:hover {
   color: white;
   background-color: rgb(252, 122, 0);
-  box-shadow: 0 0 20px #9ecaed;
+  box-shadow: 0 0 10px var(--orange-color);
 }
+
+/* FOOTER */
 
 footer {
   background: var(--blue-dark-color);
