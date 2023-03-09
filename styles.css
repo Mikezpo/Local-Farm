@@ -121,6 +121,7 @@ main span {
 
 :root {
   --blue-color: rgb(52, 116, 212);
+  --blue-dark-color: rgb(30, 61, 95);
   --blue-color-two: #7bd4ff;
   --blue-white-color: #e8fcff;
   --cyan-color: rgb(170, 220, 242);
@@ -698,46 +699,56 @@ input {
 /* -------- CONTACT US AND FOOTER -------- */
 
 .contactUs {
-  padding-top: 20px;
-  margin-top: 60px;
-  background-color: rgb(30, 61, 95);
-  background-image: linear-gradient(360deg, rgb(157, 192, 229) 0%, #e8fcff 100%);
+  margin-top: 6rem;
+  background: linear-gradient(360deg, rgb(157, 192, 229) 0%, #e8fcff 100%);
+  border: 1px solid red;
 }
 
 .contactUs h2 {
-  margin-bottom: -6rem;
+  margin: 0;
+  padding: 3rem 0;
 }
 
 .contactUsDiv {
   margin: 0 auto;
+  max-width: 70rem;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
   text-align: center;
+  border: 1px solid red;
 }
 
 .contactPhone,
 .contactEmail {
-  max-width: 25rem;
+  width: 25rem;
   margin: 0 4rem;
+  border: 1px solid red;
 }
 
 .contactEmail a {
-  color: var(--blue-color)
+  color: var(--blue-color);
 }
+
+.contactEmail a:hover {
+  border: none;
+  transform: scale(1.1);
+}
+
 .contactUsDiv img {
   width: 6rem;
-  margin: 5rem 0 0 0;
+  margin: 3rem 0;
 }
 
 .newsletter span {
   text-align: center;
+  font-size: 2rem;
   margin: 4rem auto;
   display: flex;
   justify-content: center;
   font-weight: bold;
-  color: white;
+  color: var(--blue-dark-color);
 }
 
 .newsletter input {
@@ -771,7 +782,7 @@ input {
   text-align: center;
   border: 1px solid rgb(30, 61, 95);
   color: white;
-  background: none;
+  background: var(--blue-dark-color);
   cursor: pointer;
   margin-bottom: 2em;
 }
@@ -783,7 +794,7 @@ input {
 }
 
 footer {
-  background: rgb(30, 61, 95);
+  background: var(--blue-dark-color);
   border-top: 1px solid white;
 }
 
