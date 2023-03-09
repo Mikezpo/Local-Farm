@@ -97,7 +97,8 @@ main span {
 
 .contactPhone p,
 .contactEmail p {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .newsletter {
@@ -700,7 +701,7 @@ input {
   padding-top: 20px;
   margin-top: 60px;
   background-color: rgb(30, 61, 95);
-  background-image: linear-gradient(360deg, rgb(30, 61, 95) 0%, #e8fcff 100%);
+  background-image: linear-gradient(360deg, rgb(157, 192, 229) 0%, #e8fcff 100%);
 }
 
 .contactUs h2 {
@@ -723,10 +724,10 @@ input {
 }
 
 .contactEmail a {
-  color: rgb(231, 213, 108);
+  color: var(--blue-color)
 }
 .contactUsDiv img {
-  width: 10rem;
+  width: 6rem;
   margin: 5rem 0 0 0;
 }
 
