@@ -968,11 +968,13 @@ p.registered {
   .navBar {
     height: 9rem;
   }
+
   .navBar h1 {
     position: absolute;
     z-index: 2;
   }
-  .navLinks {
+
+  .navLinks, .webPath {
     display: none;
     flex-direction: column;
     padding: 0;
@@ -980,49 +982,64 @@ p.registered {
     width: 100%;
     margin: 10rem auto 0 auto;
   }
+
   .navBar ul {
     width: 100%;
     flex-direction: column;
   }
+
+  .navLinks.active, .webPath.active {
+    padding: 12rem 0 3rem 0;
+    background: white;
+  }
+
   .navLinks.active li {
     text-align: center;
+    margin: 0.6rem auto;
   }
+
+  .navLinks.active li a {
+    padding: 1rem;
+  }
+
+  .navLinks.active li a:hover {
+    border-bottom: 2px solid var(--orange-color);
+  }
+
   .navLinks.active {
     display: flex;
   }
+
   .navLinks span {
-    visibility: hidden;
+    display: none;
   }
+
   .navButton {
     display: flex;
     margin: 1rem 0;
   }
+
   .navButton:hover {
     border: none;
   }
-  /* .account {
-    margin: 0;
-    min-width: 0px;
-  }
-  .webPath {
-    margin-right: 1em;
-  }
-  li {
-    margin-left: 0.5em;
-  } */
+
   .containerTwo {
     flex-direction: column;
     width: 100%;
   }
+
   .boxImage {
     display: none;
   }
+
   .contactUsDiv {
     flex-direction: column;
   }
+
   .contacts {
     width: 100%;
   }
+
   .footerList ul{
     flex-direction: column;
     justify-content: center;
@@ -1031,26 +1048,15 @@ p.registered {
 }
 
 @media screen and (max-width: 580px) {
-  /* .webPath {
-    visibility: hidden;
-  }
-  .account {
-    display: flex;
 
-    min-width: 100%;
-    padding-right: 3em;
-  }
-  .signAndLog {
-    display: flex;
-    flex-direction: row;
-    margin-left: 2em;
-  } */
   .container {
     padding-top: 2em;
   }
+
   .howItWorks {
     flex-direction: column;
   }
+
   .orderProcess {
     margin: 0 auto;
     display: block;
@@ -1059,9 +1065,7 @@ p.registered {
 }
 
 @media screen and (max-width: 360px) {
-  /* .account {
-    flex-direction: column;
-  } */
+
   .container {
     padding-top: 2em;
   }
