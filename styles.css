@@ -198,12 +198,19 @@ img {
 
 .signAndLog {
   display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
   position: inherit;
-  margin-left: 16rem;
+  width: 100%;
+}
+
+.signAndLog ul {
+  display: flex;
+  flex-direction: row;
 }
 
 .navBar img {
-  width: 1.2rem;
+  width: 1.4rem;
 }
 
 .webPath {
@@ -236,6 +243,11 @@ li:hover {
   background: black;
   border-radius: 10px;
 }
+
+.navButton:hover{
+  transform: scale(1.1);
+}
+
 
 /* -------- MAIN SECTION -------- */
 
@@ -973,14 +985,17 @@ p.registered {
     position: absolute;
     z-index: 2;
   }
+  .webPath {
+    margin: 0;
+  }
 
-  .navLinks, .webPath {
+  .navLinks {
     display: none;
     flex-direction: column;
     padding: 0;
     text-align: center;
     width: 100%;
-    margin: 10rem auto 0 auto;
+    margin: 20rem auto 0 auto;
   }
 
   .navBar ul {
@@ -988,7 +1003,7 @@ p.registered {
     flex-direction: column;
   }
 
-  .navLinks.active, .webPath.active {
+  .navLinks.active{
     padding: 12rem 0 3rem 0;
     background: white;
   }
