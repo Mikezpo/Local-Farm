@@ -972,17 +972,30 @@ p.registered {
     position: absolute;
     z-index: 2;
   }
-  .signAndLog, .webPath {
-    display: flex;
+  .navLinks {
+    display: none;
     flex-direction: column;
-    visibility: hidden;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    margin: 10rem auto 0 auto;
   }
   .navBar ul {
     width: 100%;
     flex-direction: column;
   }
+  .navLinks.active li {
+    text-align: center;
+  }
+  .navLinks.active {
+    display: flex;
+  }
+  .navLinks span {
+    visibility: hidden;
+  }
   .navButton {
     display: flex;
+    margin: 1rem 0;
   }
   .navButton:hover {
     border: none;
