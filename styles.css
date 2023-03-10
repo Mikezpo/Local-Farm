@@ -960,6 +960,28 @@ p.registered {
   color: var(--orange-color);
 }
 
+
+/* ABOUT US PAGE */
+
+.mainAboutPage {
+  display: flex;
+  flex-direction: column;
+  margin: 9rem 0 0 0;
+  padding: 6rem 4rem;
+  background: var(--cyan-color);
+}
+
+.mainAboutPage p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.contactUsAboutPage {
+  margin-top: 0;
+}
+
+/*  */
+
 /* -------- MEDIA QUERIES -------- */
 
 @media screen and (max-width: 900px) {

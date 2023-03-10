@@ -19,29 +19,46 @@
     
   </head>
   <body>
+    <!-- NAV BAR -->
+
     <header>
-        <nav>
-          <div class="navBar">
-            <ul class="account">
-              <h1>Local Farm</h1>
-              <div class="signAndLog">
-              <li><a href="#logInBox">Log in</a><span>&#8196&#8196|</span></li>
-              <li><a href="#signInBox">Sign</a><span>&#8196&#8196|</span></li>
-              <li>
-                <a href="#cart"><img src="https://cdn-icons-png.flaticon.com/512/2169/2169842.png" alt=""></i></a>
-              </li>
-              </div>
-            </ul>
-            <ul class="webPath">
-              <li><a href="index.html">How it Works</a><span>&#8196&#8196|</span></li>
-              <li><a href="boxes.html">Boxes</a><span>&#8196&#8196|</span></li>
-              <li><a href="about.html">About us</a><span>&#8196&#8196|</span></li>
-              <li><a href="recipes.html">Recipes</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    <main>
+      <nav>
+        <div class="navBar">
+            <h1><a href="index.html">Local Farm</a></h1>
+            
+            <div class="signAndLog navLinks">
+              <ul class="account">
+                <li class="menu-list a"><a href="#logInBox">Log in</a><span>&#8196&#8196|</span></li>
+                <!-- <li class="menu-list a"><a href="#signInBox">Register</a><span>&#8196&#8196|</span></li> -->
+                <li class="menu-list a">
+                  <a href="#cart"><img src="https://cdn-icons-png.flaticon.com/512/2169/2169842.png" alt=""></i></a><span>&#8196&#8196|</span>
+                </li>
+              </ul>
+
+              <ul class="webPath">
+                <li class="menu-list a"><a href="index.html">How it Works</a><span>&#8196&#8196|</span></li>
+                <li class="menu-list a"><a href="boxes.html">Boxes</a><span>&#8196&#8196|</span></li>
+                <li class="menu-list a"><a href="#">About us</a><span>&#8196&#8196|</span></li>
+                <li class="menu-list a"><a href="index.html">Recipes</a></li>
+              </ul>
+            </div>
+
+
+            <a href="#" class="navButton">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+
+          
+          
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main class="mainAboutPage">
+        <h2>THIS SECTION IS NOT READY YET :D</h2>
         <section>
             <p>Did you know that in the United States alone, about 30-40% of all food produced goes to waste? That's a staggering amount of perfectly good food that could be going to feed people in need or used to create other useful products. One of the main drivers of this waste is the fact that produce often goes bad before it can be sold or eaten.
             </p>
@@ -50,12 +67,89 @@
             <p>So if you're looking for a convenient way to get fresh, healthy produce delivered to your doorstep while also doing your part to help the planet, look no further than our website. We're committed to minimizing food waste and making a positive impact on the world, one delivery at a time.</p>
         </section>
     </main>
+<!-- CONTACT US SECTION -->
 
-<footer>
+<section class="contactUs contactUsAboutPage">
+      
+    <h2>Contact Us</h2>
+
+    <div class="contactUsDiv">
+      
+      <div class="contacts">
+        <div class="contactPhone">
+        
+          <img src="https://cdn-icons-png.flaticon.com/512/552/552489.png" alt="Contact icons created by Freepik - Flaticon">
+          <p>
+          +351 252 123 456<br>+351 961 234 567
+          </p>
+        </div>
+
+        <div class="contactEmail">
+          <img src="https://cdn-icons-png.flaticon.com/512/3178/3178364.png" alt="Email icons created by Uniconlabs - Flaticon">
+          <p>Have any questions? <br>Drop us an email at<br>
+            <a href="#">hello@localfarm.com</a></p
+          >
+        </div>
+      </div>
+
+      <div class="formSection">
+        <h3>Leave us a message</h3>
+            <form class="form" id="form1" action="https://formsubmit.co/" method="POST">
+              
+                <input name="name" type="text" autocomplete="on" spellcheck="true" class="validate[required,custom[onlyLetter],length[0,100]] nameForm contactFeedback" placeholder="Name*" id="name" />
+              
+                <input name="email" type="text" autocomplete="on" spellcheck="true" class="validate[required,custom[email]] emailForm contactFeedback" id="email" placeholder="Email*" />
+
+                <textarea name="text" class="validate[required,length[6,300]] textForm contactFeedback" id="comment" placeholder="Your message*"></textarea>            
+
+              <div class="submit">
+                <input type="submit" value="SUBMIT" id="buttonBlue" onclick="sendEmail()"/>
+                <div class="ease"></div>
+              </div>
+            </form>
+    </div>
+
+    </div>
+
+    <div class="newsletter">
+      <span>Keep updated with our Newsletter</span>
+      <form  class="formBox" action="">
+        <input class="newsletterInput" type="text" placeholder="Enter email address" />
+        <input class="newsletterButton newsletterInput" type="button" value="Subscribe to Newsletter" />
+      </form>
+    </div>
+
+
+  </section>
+
+  <!-- EXTRA SECTION -->
+
+  <!-- <section class="extraInfo">
+    <div>
+      <div>
+        <h4>Extra stuff</h4>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis eum
+          ex doloremque consequuntur repudiandae temporibus repellendus
+          repellat, ut numquam mollitia?
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
+          doloribus placeat cupiditate adipisci reiciendis ratione vel quae
+          aut. Delectus assumenda dignissimos qui incidunt veritatis ex ipsam,
+          debitis rem at? Saepe.
+        </p>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- FOOTER -->
+  <footer>
     <!-- Change Background -->
     <div class="footerBoxes">
       <div class="socialMedia">
-        <p>Follow Us</p>
+        <!-- <p>Follow Us</p> -->
         <a href=""><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram icons created by Pixel perfect - Flaticon"></a>
         <a href=""><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter icons created by Pixel perfect - Flaticon"></a>
         <a href=""><img src="https://cdn-icons-png.flaticon.com/512/2111/2111748.png" alt="Youtube icons created by Pixel perfect - Flaticon"></a>
@@ -74,7 +168,7 @@
       <img src="https://www.aldi.pt/content/dam/aldi/global/themenwelten/obst-und-gemuesewelt/zertifikate-und-siegel/Bio_logo.png/jcr:content/renditions/opt.736w.png.res/1512550283303/opt.736w.png" alt="">
     </div> -->
   </div>
-    <p class="registered">© 2022 Local Farm - Coded and designed by: <a href="https://joseoliveira.netlify.app/">Jose Oliveira</a> - Images: <a href="https://unsplash.com/">Unsplash</a></p>
+    <p class="registered">© 2022 Local Farm | Code and Design by: <a href="https://joseoliveira.netlify.app/">Jose Oliveira</a> | Images: <a href="https://unsplash.com/">Unsplash</a></p>
   </footer>
   <script type="text/javascript" src="main.js"></script>
 </body>
