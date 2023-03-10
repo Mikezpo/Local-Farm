@@ -185,7 +185,7 @@ img {
   background: var(--grey-color-three);
 }
 
-.navBar ul {
+.webPath {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -196,15 +196,14 @@ img {
   margin-left: 1em;
 }
 
-.navBar img {
-  width: 1.2rem;
-}
-
 .signAndLog {
   display: flex;
+  position: inherit;
+  margin-left: 16rem;
 }
-.account {
-  margin-left: 2em;
+
+.navBar img {
+  width: 1.2rem;
 }
 
 .webPath {
@@ -213,10 +212,29 @@ img {
 
 li {
   margin-left: 1em;
+  list-style: none;
 }
 
 li:hover {
   transform: scale(1.1);
+}
+
+.navButton {
+  position: absolute;
+  top: 2.4rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.navButton .bar {
+  height: 3px;
+  width: 100%;
+  background: black;
+  border-radius: 10px;
 }
 
 /* -------- MAIN SECTION -------- */
@@ -536,6 +554,7 @@ input {
 
 .quoteAbout {
   margin: 0 auto;
+  padding: 0 4rem;
   max-width: 60rem;
   text-align: center;
   font-style: italic;
@@ -701,7 +720,6 @@ input {
 .contactUs {
   margin-top: 6rem;
   background: linear-gradient(360deg, rgb(157, 192, 229) 0%, #e8fcff 100%);
-  border: 1px solid red;
 }
 
 .contactUs h2 {
@@ -714,21 +732,18 @@ input {
   max-width: 90rem;
   display: flex;
   text-align: center;
-  border: 1px solid red;
 }
 
 .contacts {
   display: flex;
   flex-direction: column;
   width: 50%;
-  border: 1px solid red;
 }
 
 .contactPhone,
 .contactEmail {
   width: 20rem;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .contactEmail a {
@@ -750,7 +765,6 @@ input {
   padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 }
 
 .formSection input, textarea {
@@ -864,7 +878,6 @@ footer a {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  border: 1px solid red;
 }
 
 .socialMedia {
@@ -952,12 +965,29 @@ p.registered {
 }
 
 @media screen and (max-width: 670px) {
-  h1 {
-    font-size: 2rem;
-    margin: 0;
-    padding-left: 1em;
+  .navBar {
+    height: 9rem;
   }
-  .account {
+  .navBar h1 {
+    position: absolute;
+    z-index: 2;
+  }
+  .signAndLog, .webPath {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+  }
+  .navBar ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navButton {
+    display: flex;
+  }
+  .navButton:hover {
+    border: none;
+  }
+  /* .account {
     margin: 0;
     min-width: 0px;
   }
@@ -966,7 +996,7 @@ p.registered {
   }
   li {
     margin-left: 0.5em;
-  }
+  } */
   .containerTwo {
     flex-direction: column;
     width: 100%;
@@ -974,10 +1004,21 @@ p.registered {
   .boxImage {
     display: none;
   }
+  .contactUsDiv {
+    flex-direction: column;
+  }
+  .contacts {
+    width: 100%;
+  }
+  .footerList ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 580px) {
-  .webPath {
+  /* .webPath {
     visibility: hidden;
   }
   .account {
@@ -990,7 +1031,7 @@ p.registered {
     display: flex;
     flex-direction: row;
     margin-left: 2em;
-  }
+  } */
   .container {
     padding-top: 2em;
   }
@@ -1005,10 +1046,9 @@ p.registered {
 }
 
 @media screen and (max-width: 360px) {
-  .account {
-    /* position: relative; */
+  /* .account {
     flex-direction: column;
-  }
+  } */
   .container {
     padding-top: 2em;
   }
