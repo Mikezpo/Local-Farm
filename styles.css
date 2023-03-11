@@ -48,6 +48,11 @@ span {
   font-size: 1.4rem;
 }
 
+.logoNav {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
 li {
   font-size: 1.4rem;
 }
@@ -191,7 +196,7 @@ img {
   align-items: center;
 }
 
-.navBar h1 {
+.logoNav {
   padding-right: 1em;
   margin-left: 1em;
 }
@@ -1003,7 +1008,7 @@ p.registered {
     height: 9rem;
   }
 
-  .navBar h1 {
+  .logoNav {
     position: absolute;
     z-index: 2;
   }
