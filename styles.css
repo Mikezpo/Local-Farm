@@ -127,16 +127,10 @@ main span {
 :root {
   --blue-color: rgb(52, 116, 212);
   --blue-dark-color: rgb(30, 61, 95);
-  --blue-color-two: #7bd4ff;
-  --blue-white-color: #e8fcff;
   --cyan-color: rgb(170, 220, 242);
-  --cyan-color-two: rgba(170, 220, 242, 1);
   --grey-color-one: rgba(220, 221, 227, 0.377);
-  --grey-color-two: rgba(220, 221, 227, 0.438);
-  --grey-color-three: rgba(220, 221, 227, 0.712);
-  --grey-color-four: rgba(220, 221, 227, 0.877);
+  --grey-color-two: rgba(220, 221, 227, 0.712);
   --orange-color: rgb(252, 122, 0);
-  --yellow-color: rgba(233, 227, 148, 0.5984987745098039) 100%;
 }
 
 /* -------- GENERAL CODE -------- */
@@ -152,7 +146,7 @@ a {
 }
 
 a:hover {
-  border-bottom: 2px solid rgb(252, 122, 0);
+  border-bottom: 2px solid var(--orange-color);
 }
 
 .howItWorksSection,
@@ -187,7 +181,7 @@ img {
 }
 
 .navBar:hover {
-  background: var(--grey-color-three);
+  background: var(--grey-color-two);
 }
 
 .webPath {
@@ -300,7 +294,7 @@ main input {
 }
 
 main .inputBox {
-  border: 1px solid rgb(30, 61, 95);
+  border: 1px solid var(--blue-dark-color);
 }
 
 main .inputBox:focus {
@@ -314,8 +308,8 @@ main .buttonSearch {
   padding: 5px;
   text-align: center;
   margin-left: -1%;
-  border: 1px solid rgb(30, 61, 95);
-  color: rgb(30, 61, 95);
+  border: 1px solid var(--blue-dark-color);
+  color: var(--blue-dark-color);
   background: none;
   cursor: pointer;
   margin-bottom: 2em;
@@ -323,7 +317,7 @@ main .buttonSearch {
 
 main .buttonSearch:hover {
   color: white;
-  background-color: rgb(252, 122, 0);
+  background-color: var(--orange-color);
   box-shadow: 0 0 20px #9ecaed;
 }
 
@@ -364,9 +358,9 @@ input {
   text-align: center;
   display: block;
   padding-top: 3em;
-  border: 1px solid rgb(30, 61, 95);
+  border: 1px solid var(--blue-dark-color);
   padding: 5px;
-  color: rgb(252, 122, 0);
+  color: var(--orange-color);
   font-weight: bold;
   width: 10rem;
   margin: 0 auto 2em auto;
@@ -374,8 +368,8 @@ input {
 
 .buttonLearnMore:hover {
   color: white;
-  border: 1px solid rgb(30, 61, 95);
-  background-color: rgb(30, 61, 95);
+  border: 1px solid var(--blue-dark-color);
+  background-color: var(--blue-dark-color);
   box-shadow: 0 0 20px #9ecaed;
 }
 
@@ -430,10 +424,10 @@ input {
 
 .getStartedA {
   margin-top: 3em;
-  color: rgb(252, 122, 0);
+  color: var(--orange-color);
   font-weight: bold;
   font-size: 1.2rem;
-  border: 1px solid rgb(30, 61, 95);
+  border: 1px solid var(--blue-dark-color);
   padding: 5px;
   width: 10rem;
   cursor: pointer;
@@ -441,8 +435,8 @@ input {
 
 .getStartedA:hover {
   color: white;
-  border: 1px solid rgb(30, 61, 95);
-  background-color: rgb(30, 61, 95);
+  border: 1px solid var(--blue-dark-color);
+  background-color: var(--blue-dark-color);
   box-shadow: 0 0 20px #9ecaed;
 }
 
@@ -595,11 +589,11 @@ input {
 }
 
 .moreAboutMission {
-  background: rgb(30, 61, 95);
+  background: var(--blue-dark-color);
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
-  border: 1px solid rgb(30, 61, 95);
+  border: 1px solid var(--blue-dark-color);
   padding: 1rem 2rem;
   width: 10rem;
   cursor: pointer;
@@ -607,8 +601,8 @@ input {
 
 .moreAboutMission:hover {
   color: white;
-  border: 1px solid rgb(30, 61, 95);
-  background-color: rgb(30, 61, 95);
+  border: 1px solid var(--blue-dark-color);
+  background-color: var(--blue-dark-color);
   box-shadow: 0 0 20px #9ecaed;
 }
 
@@ -669,7 +663,7 @@ input {
 }
 
 .selectRecipes li {
-  border: 1px solid rgb(30, 61, 95);
+  border: 1px solid var(--blue-dark-color);
   padding: 1rem 2rem;
   margin: 1rem;
   border-radius: 16px;
@@ -677,8 +671,8 @@ input {
 
 .selectRecipes li:hover {
   color: white;
-  background: rgb(252, 122, 0);
-  border: 1px solid rgb(252, 122, 0);
+  background: var(--orange-color);
+  border: 1px solid var(--orange-color);
   box-shadow: 0 5px 20px #9ecaed;
   cursor: pointer;
   transform: scale(1.1);
@@ -848,7 +842,7 @@ input {
 }
 
 .newsletter .newsletterInput {
-  border: 1px solid rgb(170, 220, 242);
+  border: 1px solid var(--blue-color);
   height: 3rem;
   width: 15rem;
   text-align: center;
@@ -864,7 +858,7 @@ input {
   width: 15rem;
   padding: 5px;
   text-align: center;
-  border: 1px solid rgb(30, 61, 95);
+  border: 1px solid var(--blue-dark-color);
   color: white;
   background: var(--blue-dark-color);
   cursor: pointer;
@@ -873,7 +867,7 @@ input {
 
 .newsletterButton:hover {
   color: white;
-  background-color: rgb(252, 122, 0);
+  background-color: var(--orange-color);
   box-shadow: 0 0 10px var(--orange-color);
 }
 
