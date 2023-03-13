@@ -457,7 +457,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 40em;
+  max-width: 60rem;
   text-align: center;
   margin: 0 auto 6em auto;
 }
@@ -565,7 +565,7 @@ input {
 
 .quoteAbout {
   margin: 0 auto;
-  padding: 0 4rem;
+  /* padding: 0 4rem; */
   max-width: 60rem;
   text-align: center;
   font-style: italic;
@@ -610,7 +610,7 @@ input {
 
 .localFarms > p,
 .recipes > p {
-  max-width: 50rem;
+  max-width: 60rem;
   text-align: center;
   margin: -4rem auto 4rem auto;
 }
