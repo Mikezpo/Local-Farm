@@ -135,7 +135,7 @@ main span {
   --blue-dark-color: rgb(30, 61, 95);
   --cyan-color: rgb(170, 220, 242);
   --grey-color-one: rgba(220, 221, 227, 0.377);
-  --grey-color-two: rgb(250, 235, 207);
+  --grey-color-two: rgb(240, 204, 133);
   --orange-color: rgb(252, 122, 0);
 }
 
@@ -394,8 +394,7 @@ input {
 
 .boxSizes {
   background-image: url("https://images.unsplash.com/photo-1511735643442-503bb3bd348a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #ffffff;
 }
 
 .containerTwo {
@@ -437,6 +436,11 @@ input {
 
 .box h3 {
   padding-bottom: 1em;
+}
+
+.box span {
+  font-size: 1.6rem;
+  padding: 0 1rem;
 }
 
 .getStartedA {
@@ -1084,6 +1088,7 @@ p.registered {
   .boxImage {
     display: none;
   }
+
 
   .contactUsDiv {
     flex-direction: column;
