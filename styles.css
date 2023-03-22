@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   padding: 3em 0;
 }
@@ -48,9 +48,10 @@ span {
   font-size: 1.4rem;
 }
 
-.logoNav {
+.logoNav a{
   font-size: 2.5rem;
   font-weight: bold;
+  letter-spacing: 0.2rem;
 }
 
 li {
@@ -129,7 +130,7 @@ main span {
   --blue-dark-color: rgb(30, 61, 95);
   --cyan-color: rgb(170, 220, 242);
   --grey-color-one: rgba(220, 221, 227, 0.377);
-  --grey-color-two: rgba(220, 221, 227, 0.712);
+  --grey-color-two: rgb(250, 235, 207);
   --orange-color: rgb(252, 122, 0);
 }
 
@@ -190,9 +191,9 @@ img {
   align-items: center;
 }
 
-.logoNav {
-  padding-right: 1em;
+.logoNav a{
   margin-left: 1em;
+  cursor: pointer;
 }
 
 .signAndLog {
@@ -200,7 +201,8 @@ img {
   align-items: flex-end;
   justify-content: flex-end;
   position: inherit;
-  width: 100%;
+  width: 80%;
+  margin-left: 20%;
 }
 
 .signAndLog ul {
@@ -1002,7 +1004,7 @@ p.registered {
     height: 9rem;
   }
 
-  .logoNav {
+  .logoNav a{
     position: absolute;
     z-index: 2;
   }
