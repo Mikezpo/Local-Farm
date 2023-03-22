@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3.3rem;
   text-align: center;
   padding: 3em 0;
 }
@@ -37,11 +37,11 @@ h3 {
 }
 
 h4 {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 span {
@@ -55,7 +55,12 @@ span {
 }
 
 li {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+
+.headerTextH3 {
+  color: var(--orange-color);
 }
 
 input,
@@ -276,6 +281,15 @@ main {
   text-align: center;
 }
 
+.sectionOne p {
+  font-size: 2rem;
+}
+
+.headerText {
+  font-size: 4rem;
+  margin-top: 4rem;
+}
+
 main h2 {
   padding-bottom: 3em;
 }
@@ -354,6 +368,7 @@ input {
 
 .orderProcess p {
   padding-bottom: 1em;
+  font-size: 1.6rem;
 }
 
 .buttonLearnMore {
