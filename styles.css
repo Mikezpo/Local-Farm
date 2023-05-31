@@ -1018,13 +1018,15 @@ p.registered {
   }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 800px) {
   .navBar {
     height: 9rem;
   }
 
   .logoNav a{
+    border: 1px solid red;
     position: absolute;
+    top: 2rem;
     z-index: 2;
   }
   .webPath {
@@ -1079,6 +1081,10 @@ p.registered {
   .navButton:hover {
     border: none;
   }
+}
+
+@media screen and (max-width: 670px) {
+  
 
   .containerTwo {
     flex-direction: column;
