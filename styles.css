@@ -1024,7 +1024,6 @@ p.registered {
   }
 
   .logoNav a{
-    border: 1px solid red;
     position: absolute;
     top: 2rem;
     z-index: 2;
