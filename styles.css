@@ -135,6 +135,7 @@ main span {
   --cyan-color: rgb(170, 220, 242);
   --grey-color-one: rgba(220, 221, 227, 0.377);
   --grey-color-two: rgb(240, 204, 133);
+  --yellow-color: rgb(231, 185, 94);
   --orange-color: rgb(252, 122, 0);
 }
 
@@ -350,19 +351,23 @@ img {
 .signInBtn {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;
-	background-color: #ff4b2b;
+	background-color: var(--orange-color);
 	color: #FFFFFF;
 	font-size: 1.2rem;
 	font-weight: bold;
 	padding: 1.2rem 4.5rem;
 	letter-spacing: 0.2rem;
 	text-transform: uppercase;
-	transition: transform 80ms ease-in;
+}
+
+.signInBtn:hover {
+  background: var(--blue-dark-color);
+  border: 1px solid var(--blue-dark-color);
+  transition: transform 0.8s ease-in;
 }
 
 #signUp, #signIn {
   border-radius: 20px;
-	border: 1px solid #FF416C;
 	background-color: none;
   border: 1.4px solid #FFFFFF;
   padding: 1.2rem 4.5rem;
@@ -457,9 +462,9 @@ img {
 }
 
 .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: var(--orange-color);
+	background: -webkit-linear-gradient(to right, var(--yellow-color), var(--orange-color));
+	background: linear-gradient(to right, var(--yellow-color), var(--orange-color));
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
