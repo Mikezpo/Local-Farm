@@ -16,7 +16,6 @@ html {
 
 body {
   padding: 0;
-  /* background: #dbe2ef; */
 }
 
 /* -------- FONTS -------- */
@@ -198,7 +197,7 @@ img {
 }
 
 .logoNav a{
-  margin-left: 1em;
+  margin-left: 3rem;
   cursor: pointer;
 }
 
@@ -224,6 +223,50 @@ img {
 .navBar img {
   width: 1.4rem;
 }
+
+/* Sign In form */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* SIGN IN FORM CONTENT */
+
+
+
+
+/*  */
 
 .webPath {
   margin-right: 2em;
@@ -277,7 +320,7 @@ main {
   justify-content: space-around;
 }
 
-.container {
+.containerMain {
   padding: 4em 2em;
 }
 
@@ -843,6 +886,7 @@ input {
   outline: none;
   border-color: #9ecaed;
   box-shadow: 0 0 10px #9ecaed;
+  transition: all 0.5s ease;
 }
 
 #buttonBlue:focus {
@@ -905,7 +949,9 @@ input {
 .newsletterButton:hover {
   color: white;
   background-color: var(--orange-color);
+  border: 1px solid var(--orange-color);
   box-shadow: 0 0 10px var(--orange-color);
+  transition: all 0.5s ease;
 }
 
 /* FOOTER */
@@ -942,11 +988,14 @@ footer a {
 
 .socialMedia img {
   width: 3rem;
-  margin: 1rem;
+  margin: 1rem 2rem;
+  filter: grayscale(100%);
 }
 
 .socialMedia img:hover {
   transform: scale(1.1);
+  transition: all 0.8s ease;
+  filter: grayscale(0);
 }
 
 .socialMedia a {
@@ -978,6 +1027,7 @@ footer a {
 
 .footerList li:hover {
   transform: scale(1.1);
+  transition: all 0.8s ease;
 }
 
 p.registered {
@@ -994,6 +1044,7 @@ p.registered {
 
 .registered a:hover {
   color: var(--orange-color);
+  transition: all 0.5s ease;
 }
 
 
@@ -1044,6 +1095,16 @@ p.registered {
     top: 2rem;
     z-index: 2;
   }
+
+  .logoNav a:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+  }
+
+  .logoNav:hover {
+    transform: none;
+  }
+
   .webPath {
     margin: 0;
   }
@@ -1078,6 +1139,7 @@ p.registered {
 
   .navLinks.active li a:hover {
     border-bottom: 2px solid var(--orange-color);
+    transition: all 0.5s ease;
   }
 
   .navLinks.active {

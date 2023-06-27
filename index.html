@@ -29,11 +29,29 @@
             
             <div class="signAndLog navLinks">
               <ul class="account">
-                <li class="menu-list a"><a class="menuA" href="#logInBox">Log in</a><span>&#8196&#8196|</span></li>
                 <li class="menu-list a">
-                  <a href="#cart"><img src="https://cdn-icons-png.flaticon.com/512/2169/2169842.png" alt=""></i></a><span>&#8196&#8196|</span>
+                  <a class="menuA" href="#" onclick="showModal('loginModal')">Log in</a>
+                  <span>&#8196&#8196|</span>
+                </li>
+                <li class="menu-list a">
+                  <a href="#cart"><img src="https://cdn-icons-png.flaticon.com/512/2169/2169842.png" alt=""></a>
+                  <span>&#8196&#8196|</span>
                 </li>
               </ul>
+              
+              <div id="loginModal" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="hideModal('loginModal')">&times;</span>
+                  <!-- Log in form here -->
+
+
+
+
+                  <!-- END -->
+                </div>
+              </div>
+
+              <!--  -->
 
               <ul class="webPath">
                 <li class="menu-list a"><a href="#howItWorksHeading">How it Works</a><span>&#8196&#8196|</span></li>
@@ -59,7 +77,7 @@
     <!-- MAIN SECTION -->
 
     <main>
-      <section class="container">
+      <section class="containerMain">
         
         <section class="sectionOne">
           <h2 class="headerText">
