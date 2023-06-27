@@ -188,6 +188,7 @@ img {
 
 .navBar:hover {
   background: var(--grey-color-two);
+  transition: all 0.8s ease;
 }
 
 .webPath {
@@ -199,6 +200,11 @@ img {
 .logoNav a{
   margin-left: 1em;
   cursor: pointer;
+}
+
+.logoNav:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
 }
 
 .signAndLog {
@@ -230,6 +236,7 @@ li {
 
 li:hover {
   transform: scale(1.1);
+  transition: all 0.5s ease;
 }
 
 .navButton {
@@ -252,6 +259,7 @@ li:hover {
 
 .navButton:hover{
   transform: scale(1.1);
+  transition: all 0.5s ease;
 }
 
 
@@ -334,6 +342,7 @@ main .buttonSearch {
 main .buttonSearch:hover {
   color: white;
   background-color: var(--orange-color);
+  border: 1px solid var(--orange-color);
   box-shadow: 0 0 20px #9ecaed;
 }
 

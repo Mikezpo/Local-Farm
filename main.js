@@ -18,3 +18,15 @@ for (const item of menuItems) {
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
 });
+
+
+// Close the menu when clicking outside of it
+document.addEventListener('click', (event) => {
+  const isClickInsideMenu = navbarLinks.contains(event.target);
+  const isClickOnButton = event.target === toggleButton;
+
+  if (!isClickInsideMenu && !isClickOnButton) {
+    navbarLinks.classList.remove('active');
+    toggleButton.checked = false;
+  }
+});
