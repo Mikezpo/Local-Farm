@@ -344,6 +344,7 @@ main .buttonSearch:hover {
   background-color: var(--orange-color);
   border: 1px solid var(--orange-color);
   box-shadow: 0 0 20px #9ecaed;
+  transition: all 0.5s ease;
 }
 
 input {
@@ -397,6 +398,7 @@ input {
   border: 1px solid var(--blue-dark-color);
   background-color: var(--blue-dark-color);
   box-shadow: 0 0 20px #9ecaed;
+  transition: all 0.5s ease;
 }
 
 /* -------- BOX SECTION -------- */
@@ -435,6 +437,7 @@ input {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 5px 20px #9ecaed;
   transform: scale(1.0);
+  transition: all 0.8s ease;
 }
 
 .box img {
@@ -468,6 +471,7 @@ input {
   border: 1px solid var(--blue-dark-color);
   background-color: var(--blue-dark-color);
   box-shadow: 0 0 20px #9ecaed;
+  transition: all 0.5s ease;
 }
 
 
@@ -537,6 +541,7 @@ input {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 5px 20px #9ecaed;
   transform: scale(1.1);
+  transition: all 0.8s ease;
 }
 
 .priceBox {
@@ -622,10 +627,9 @@ input {
   background: var(--blue-dark-color);
   color: white;
   font-weight: bold;
-  font-size: 1.2rem;
   border: 1px solid var(--blue-dark-color);
   padding: 1rem 2rem;
-  width: 10rem;
+  
   cursor: pointer;
 }
 
@@ -634,6 +638,8 @@ input {
   border: 1px solid var(--blue-dark-color);
   background-color: var(--blue-dark-color);
   box-shadow: 0 0 20px #9ecaed;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
 }
 
 /* -------- LOCAL FARMS IMAGES AND RECIPES -------- */
@@ -681,7 +687,8 @@ input {
 
 .freshFarm img:hover,
 .recipesImages img:hover {
-  box-shadow: 0 5px 20px #9ecaed;
+  box-shadow: 0 10px 20px var(--blue-dark-color);
+  transition: all 0.8s ease;
 }
 
 .selectRecipes ul {
@@ -710,6 +717,7 @@ input {
 
 .selectRecipes li:hover > a {
   color: white;
+  transition: all 0.5s ease;
 }
 
 .selectRecipes a {
@@ -787,12 +795,11 @@ input {
   margin: 0 auto;
 }
 
-.contactEmail a {
+.emailAddress {
   color: var(--blue-color);
-}
-
-.contactEmail a:hover {
-  border: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  z-index: 99;
 }
 
 .contactUsDiv img {
