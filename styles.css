@@ -1338,18 +1338,18 @@ p.registered {
 }
 
 .aboutSection p {
-  max-width: 50rem;
+  max-width: 60rem;
   text-align: justify;
   font-size: 2rem;
+  letter-spacing: 0.1rem;
 }
 
 .aboutSection img {
   width: 100%;
   background-image: cover;
   background-repeat: no-repeat;
-  padding: 4rem 6rem;
-
-  border: 1px solid orange;
+  padding: 6rem 10rem;
+  border-radius: 16%;
 }
 
 .sectionDiv {
