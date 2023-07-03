@@ -1337,18 +1337,41 @@ p.registered {
   border: 1px solid red;
 }
 
-.sectionOneDiv {
-  width: 100rem;
-  margin: 0 auto;
-
-  border: 1px solid blue;
-}
-
 .aboutSection p {
   max-width: 50rem;
   text-align: justify;
   font-size: 2rem;
 }
+
+.aboutSection img {
+  width: 100%;
+  background-image: cover;
+  background-repeat: no-repeat;
+  padding: 4rem 6rem;
+
+  border: 1px solid orange;
+}
+
+.sectionDiv {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid blue;
+}
+
+.sectionDiv img {
+  margin: 0 auto;
+}
+
+.divTwo p, .divFour p {
+  margin: 0 0 0 auto;
+}
+
+
+
 
 
 
