@@ -1318,7 +1318,7 @@ p.registered {
   flex-direction: column;
   margin: 9rem 0 0 0;
   padding: 6rem 4rem;
-  background: var(--cyan-color);
+  background: none;
 }
 
 .mainAboutPage p {
@@ -1333,8 +1333,6 @@ p.registered {
 .aboutSection {
   width: 100%;
   margin: 0 auto;
-
-  border: 1px solid red;
 }
 
 .aboutSection p {
@@ -1346,10 +1344,11 @@ p.registered {
 
 .aboutSection img {
   width: 100%;
+  height: 60rem;
   background-image: cover;
   background-repeat: no-repeat;
   padding: 6rem 10rem;
-  border-radius: 16%;
+  border-radius: 20% 0%;
 }
 
 .sectionDiv {
@@ -1358,8 +1357,6 @@ p.registered {
   padding: 4rem;
   display: flex;
   flex-direction: column;
-
-  border: 1px solid blue;
 }
 
 .sectionDiv img {
