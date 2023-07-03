@@ -350,7 +350,7 @@ img {
 
 .signInBtn {
 	border-radius: 20px;
-	border: 1px solid #FF4B2B;
+	border: 1px solid var(--orange-color);
 	background-color: var(--orange-color);
 	color: #FFFFFF;
 	font-size: 1.2rem;
@@ -1329,6 +1329,28 @@ p.registered {
 .contactUsAboutPage {
   margin-top: 0;
 }
+
+.aboutSection {
+  width: 100%;
+  margin: 0 auto;
+
+  border: 1px solid red;
+}
+
+.sectionOneDiv {
+  width: 100rem;
+  margin: 0 auto;
+
+  border: 1px solid blue;
+}
+
+.aboutSection p {
+  max-width: 50rem;
+  text-align: justify;
+  font-size: 2rem;
+}
+
+
 
 /*  */
 
