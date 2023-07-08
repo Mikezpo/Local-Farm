@@ -16,6 +16,9 @@ The projects was built using the following technologies:
 - CSS
 - JavaScript
 
+## Features to be added
+The plan is to use React library, providing a responsive and interactive user interface, and to build the Back End structure turning this into a Full Stack project.
+
 
 ## Contact Me
 If you'd like to learn more about my skills and experience, please don't hesitate to reach out. I'd love to hear from you!
