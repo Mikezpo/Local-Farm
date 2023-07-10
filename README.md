@@ -7,7 +7,7 @@ Welcome to my Local Farm project, showcasing my experience and skills as a Front
 
 
 ## About this project
-I got the idea of building this project based on a well-known UK company "OddBox". I plan on developing it more as time goes by and I get new ideas to implement, so I can not say that it's a finished project for now.
+Local Farm is an E-commerce website that aims to tackle food waste and promote sustainable living by connecting customers with local farmers to deliver fresh fruits and vegetables directly to their doorsteps. This project aims to make the process of sourcing and purchasing locally grown produce convenient and accessible, while also supporting local farming communities.
 
 
 ## Technologies Used
@@ -15,6 +15,12 @@ The projects was built using the following technologies:
 - HTML
 - CSS
 - JavaScript
+
+Technologies to be added:
+- React
+- MongoDB
+- Node.js
+
 
 ## Features to be added
 The plan is to use React library, providing a responsive and interactive user interface, and to build the Back End structure turning this into a Full Stack project.
