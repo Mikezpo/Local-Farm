@@ -1371,7 +1371,6 @@ p.registered {
 
 .boxesSection {
   margin: 0 2rem;
-  border: 1px solid red;
 }
 
 .selectBoxes {
@@ -1388,7 +1387,14 @@ p.registered {
   text-align: justify;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border-image: linear-gradient(var(--orange-color), var(--blue-color)) 10;
+  border-width: 4px;
+  border-style: solid;
+}
+
+.mediumBox {
+  border-right: 0px;
+  border-left: 0px;
 }
 
 .boxSelection h3 {
@@ -1399,6 +1405,11 @@ p.registered {
 
 .boxSelection p {
   font-size: 1.8rem;
+}
+
+.boxSelection a {
+  margin: 3rem auto;
+  font-size: 1.4rem;
 }
 
 
