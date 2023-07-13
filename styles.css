@@ -1367,12 +1367,19 @@ p.registered {
   margin: 0 0 0 auto;
 }
 
+/* BOXES PAGE */
+
+.boxesSection {
+  margin: 0 2rem;
+  border: 1px solid red;
+}
+
+.selectBoxes {
+  
+}
 
 
 
-
-
-/*  */
 
 /* -------- MEDIA QUERIES -------- */
 
