@@ -1375,7 +1375,30 @@ p.registered {
 }
 
 .selectBoxes {
-  
+  max-width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxSelection {
+  padding: 2rem 4rem;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.boxSelection h3 {
+  text-align: center;
+  padding: 2rem 0 4rem 0;
+  font-size: 2.4rem;
+}
+
+.boxSelection p {
+  font-size: 1.8rem;
 }
 
 
