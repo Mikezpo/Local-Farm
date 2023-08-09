@@ -1387,6 +1387,17 @@ p.registered {
   color: var(--orange-color);
 }
 
+.worksEndDiv {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#getStartedWorks {
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+}
+
 /* BOXES PAGE */
 
 .boxesSection {
