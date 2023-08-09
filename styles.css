@@ -434,6 +434,11 @@ img {
 	width: 100%;
 }
 
+.signInInput:focus {
+  outline: 2px solid #9ecaed;
+  box-shadow: 10px 0px 10px #9ecaed;
+}
+
 @keyframes show {
 	0%, 49.99% {
 		opacity: 0;
