@@ -1341,10 +1341,11 @@ p.registered {
 }
 
 .aboutSection p {
-  max-width: 60rem;
+  max-width: 80rem;
   text-align: justify;
   font-size: 2rem;
   letter-spacing: 0.1rem;
+  margin: 0 auto;
 }
 
 .aboutSection img {
@@ -1368,9 +1369,10 @@ p.registered {
   margin: 0 auto;
 }
 
-.divTwo p, .divFour p {
+/* .divTwo, .divFour {
   margin: 0 0 0 auto;
-}
+  border: 1px solid red;
+} */
 
 /* BOXES PAGE */
 
