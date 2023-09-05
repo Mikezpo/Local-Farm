@@ -1,7 +1,5 @@
 // coded by @Mikezpo
 
-const project_name = 'Your local Farm';
-
 const toggleButton = document.getElementsByClassName('navButton')[0];
 const navbarLinks = document.getElementsByClassName('navLinks')[0];
 

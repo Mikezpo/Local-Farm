@@ -805,6 +805,7 @@ input {
   max-width: 60rem;
   text-align: center;
   margin: 0 auto 6em auto;
+  padding: 0 4rem;
 }
 
 .fruitVeggBox {
@@ -878,6 +879,7 @@ input {
 
 .fruitBox {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -911,13 +913,12 @@ input {
 
 .quoteAbout {
   margin: 0 auto;
-  /* padding: 0 4rem; */
+  padding: 0 4rem 6rem 4rem;
   max-width: 60rem;
   text-align: center;
   font-style: italic;
   font-size: 1.6rem;
   font-weight: 400;
-  padding-bottom: 6rem;
 }
 
 .quoteAuthor {
@@ -1300,8 +1301,8 @@ footer a {
 
 p.registered {
   text-align: center;
-  padding: 20px 0;
-  font-weight: 600;
+  padding: 2rem;
+  font-weight: 400;
   color: white;
   border-top: 1px solid white;
 }
