@@ -586,9 +586,11 @@ li:hover {
 
 main {
   background: url("https://images.unsplash.com/photo-1498408040764-ab6eb772a145?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2344&q=80");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 0px -100px;
+  height: 100rem;
 }
 
 main {
@@ -610,6 +612,7 @@ main {
 
 .sectionOne p {
   font-size: 2rem;
+  font-weight: 600;
 }
 
 .headerText {
@@ -652,8 +655,8 @@ main .buttonSearch {
   text-align: center;
   margin-left: -1%;
   border: 1px solid var(--blue-dark-color);
-  color: var(--blue-dark-color);
-  background: none;
+  background-color: var(--blue-dark-color);
+  color: white;
   cursor: pointer;
   margin-bottom: 2em;
   transition: all 0.5s ease;
@@ -737,6 +740,7 @@ input {
 }
 
 .boxSizes h2 {
+  color: var(--orange-color);
   text-align: center;
   padding-bottom: 3em;
 }
@@ -769,6 +773,7 @@ input {
 }
 
 .box h3 {
+  color: var(--blue-color);
   padding-bottom: 1em;
 }
 
@@ -819,9 +824,19 @@ input {
   padding: 0 4rem;
 }
 
+.boxSizes, .fruitVeggBox, .veggieBox, .fruitBox {
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.fruitVeggBox h3, .veggieBox h3, .fruitBox h3 {
+  color: var(--blue-color);
+}
+
 .fruitVeggBox {
+  background-image: none;
   background-image: url("https://images.unsplash.com/photo-1606757389667-45c2024f9fa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
-  background-position: -400px -400px;
+  
   background-repeat: no-repeat;
   background-size: auto;
 }
@@ -876,14 +891,13 @@ input {
 
 .veggieBox {
   background-image: url("https://images.unsplash.com/photo-1587334207407-deb137a955ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80");
-  background-position: -150px -650px;
+  
   background-repeat: no-repeat;
   background-size: auto;
 }
 
 .fruitBox {
   background-image: url("https://images.unsplash.com/photo-1582281298055-e25b84a30b0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1505&q=80");
-  background-position: -250px -350px;
   background-repeat: no-repeat;
   background-size: auto;
 }
@@ -1461,6 +1475,13 @@ p.registered {
 
 
 /* -------- MEDIA QUERIES -------- */
+@media screen and (max-width: 950px) {
+
+  /* SIGN IN / LOG IN FORM */
+  /* EITHER TURN IN VERTICALLY OR CHANGE Z-INDEX TO SWAP */
+
+}
+
 
 @media screen and (max-width: 900px) {
   .foodWaste {
