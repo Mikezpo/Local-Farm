@@ -836,7 +836,7 @@ input {
   padding: 0 4rem;
 }
 
-.fruitVeggBox, .veggieBox, .fruitBox {
+.fruitVeggBox, .veggieBox, .fruitBox, .foodWaste {
   background-attachment: fixed;
   background-position: center;
 }
