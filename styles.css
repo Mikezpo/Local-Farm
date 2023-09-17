@@ -12,6 +12,7 @@ html {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 100;
   line-height: 2;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -184,17 +185,21 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.8s ease;
 }
 
 .navBar:hover {
   background: var(--grey-color-two);
-  transition: all 0.8s ease;
 }
 
 .webPath {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logoNav {
+  transition: all 0.5s ease;
 }
 
 .logoNav a{
@@ -204,7 +209,7 @@ img {
 
 .logoNav:hover {
   transform: scale(1.1);
-  transition: all 0.5s ease;
+  
 }
 
 .signAndLog {
@@ -340,12 +345,12 @@ img {
 .signInSocial img {
   width: 2.2rem;
   filter: grayscale(50%);
+  transition: all 0.5s ease;
 }
 
 .signInSocial img:hover {
   filter: grayscale(0);
   transform: scale(1.2);
-  transition: all 0.5s ease;
 }
 
 .signInBtn {
@@ -358,12 +363,13 @@ img {
 	padding: 1.2rem 4.5rem;
 	letter-spacing: 0.2rem;
 	text-transform: uppercase;
+  transition: transform 0.8s ease-in-out;
 }
 
 .signInBtn:hover {
   background: var(--blue-dark-color);
   border: 1px solid var(--blue-dark-color);
-  transition: transform 0.8s ease-in;
+  
 }
 
 #signUp, #signIn {
@@ -376,11 +382,11 @@ img {
 	letter-spacing: 0.2rem;
 	font-weight: bold;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 #signUp:hover, #signIn:hover {
   transform: scale(1.1);
-  transition: all 0.5s ease;
 }
 
 .signInResetPass {
@@ -395,11 +401,12 @@ img {
 
 .signInBtn {
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .signInBtn:hover {
   transform: scale(1.1);
-  transition: all 0.5s ease;
+  
 }
 
 .signInBtn:active {
@@ -543,11 +550,11 @@ img {
 li {
   margin-left: 1em;
   list-style: none;
+  transition: all 0.5s ease;
 }
 
 li:hover {
   transform: scale(1.1);
-  transition: all 0.5s ease;
 }
 
 .navButton {
@@ -566,11 +573,12 @@ li:hover {
   width: 100%;
   background: black;
   border-radius: 10px;
+  transition: all 0.5s ease;
 }
 
 .navButton:hover{
   transform: scale(1.1);
-  transition: all 0.5s ease;
+  
 }
 
 
@@ -648,6 +656,7 @@ main .buttonSearch {
   background: none;
   cursor: pointer;
   margin-bottom: 2em;
+  transition: all 0.5s ease;
 }
 
 main .buttonSearch:hover {
@@ -655,7 +664,6 @@ main .buttonSearch:hover {
   background-color: var(--orange-color);
   border: 1px solid var(--orange-color);
   box-shadow: 0 0 20px #9ecaed;
-  transition: all 0.5s ease;
 }
 
 input {
@@ -702,6 +710,7 @@ input {
   font-weight: bold;
   width: 10rem;
   margin: 0 auto 2em auto;
+  transition: all 0.5s ease;
 }
 
 .buttonLearnMore:hover {
@@ -709,7 +718,6 @@ input {
   border: 1px solid var(--blue-dark-color);
   background-color: var(--blue-dark-color);
   box-shadow: 0 0 20px #9ecaed;
-  transition: all 0.5s ease;
 }
 
 /* -------- BOX SECTION -------- */
@@ -744,11 +752,14 @@ input {
   background-color: rgba(255, 255, 255, 0.733);
 }
 
+.boxColumn {
+  transition: all 0.8s ease-in-out;
+}
+
 .boxColumn:hover {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 5px 20px #9ecaed;
   transform: scale(1.0);
-  transition: all 0.8s ease;
 }
 
 .box img {
@@ -775,6 +786,7 @@ input {
   padding: 5px;
   width: 10rem;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .getStartedA:hover {
@@ -782,7 +794,6 @@ input {
   border: 1px solid var(--blue-dark-color);
   background-color: var(--blue-dark-color);
   box-shadow: 0 0 20px #9ecaed;
-  transition: all 0.5s ease;
 }
 
 
@@ -845,6 +856,7 @@ input {
   padding: 2em;
   border-radius: 16px;
   box-shadow: 0 2px 5px #9ecaed;
+  transition: all 0.8s ease-in-out;
 }
 
 .fruitVeggContainer:hover,
@@ -853,7 +865,6 @@ input {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 5px 20px #9ecaed;
   transform: scale(1.1);
-  transition: all 0.8s ease;
 }
 
 .priceBox {
@@ -941,17 +952,15 @@ input {
   font-weight: bold;
   border: 1px solid var(--blue-dark-color);
   padding: 1rem 2rem;
-  
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .moreAboutMission:hover {
-  color: white;
-  border: 1px solid var(--blue-dark-color);
-  background-color: var(--blue-dark-color);
-  box-shadow: 0 0 20px #9ecaed;
+  color: var(--blue-dark-color);
+  border: 1px solid white;
+  background-color: white;
   transform: scale(1.1);
-  transition: all 0.5s ease;
 }
 
 /* -------- LOCAL FARMS IMAGES AND RECIPES -------- */
@@ -995,12 +1004,12 @@ input {
   margin: 2rem;
   object-fit: cover;
   border-radius: 16px;
+  transition: all 0.8s ease-in-out;
 }
 
 .freshFarm img:hover,
 .recipesImages img:hover {
   box-shadow: 0 10px 20px var(--blue-dark-color);
-  transition: all 0.8s ease;
 }
 
 .selectRecipes ul {
@@ -1025,11 +1034,15 @@ input {
   box-shadow: 0 5px 20px #9ecaed;
   cursor: pointer;
   transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.selectRecipes li > a {
+  transition: all 0.5s ease-in-out;
 }
 
 .selectRecipes li:hover > a {
   color: white;
-  transition: all 0.5s ease;
 }
 
 .selectRecipes a {
@@ -1148,6 +1161,7 @@ input {
   color: white;
   font-size: 2rem;
   font-weight: bold;
+  transition: all 0.5s ease-in-out;
 }
 
 #buttonBlue:hover {
@@ -1155,7 +1169,6 @@ input {
   outline: none;
   border-color: #9ecaed;
   box-shadow: 0 0 10px #9ecaed;
-  transition: all 0.5s ease;
 }
 
 #buttonBlue:focus {
@@ -1213,6 +1226,7 @@ input {
   background: var(--blue-dark-color);
   cursor: pointer;
   margin-bottom: 2em;
+  transition: all 0.5s ease-in-out;
 }
 
 .newsletterButton:hover {
@@ -1220,7 +1234,6 @@ input {
   background-color: var(--orange-color);
   border: 1px solid var(--orange-color);
   box-shadow: 0 0 10px var(--orange-color);
-  transition: all 0.5s ease;
 }
 
 /* FOOTER */
@@ -1259,11 +1272,11 @@ footer a {
   width: 3rem;
   margin: 1rem 2rem;
   filter: grayscale(100%);
+  transition: all 0.8s ease-in-out;
 }
 
 .socialMedia img:hover {
   transform: scale(1.1);
-  transition: all 0.8s ease;
   filter: grayscale(0);
 }
 
@@ -1292,11 +1305,11 @@ footer a {
   font-size: 1.1rem;
   font-weight: bold;
   margin: 1rem 2rem;
+  transition: all 0.8s ease-in-out;
 }
 
 .footerList li:hover {
   transform: scale(1.1);
-  transition: all 0.8s ease;
 }
 
 p.registered {
@@ -1309,11 +1322,11 @@ p.registered {
 
 .registered a {
   border: none;
+  transition: all 0.5s ease-in-out;
 }
 
 .registered a:hover {
   color: var(--orange-color);
-  transition: all 0.5s ease;
 }
 
 
@@ -1472,11 +1485,11 @@ p.registered {
     position: absolute;
     top: 2rem;
     z-index: 2;
+    transition: all 0.5s ease-in-out;
   }
 
   .logoNav a:hover {
     transform: scale(1.1);
-    transition: all 0.5s ease;
   }
 
   .logoNav:hover {
@@ -1513,11 +1526,11 @@ p.registered {
 
   .navLinks.active li a {
     padding: 1rem;
+    transition: all 0.5s ease-in-out;
   }
 
   .navLinks.active li a:hover {
     border-bottom: 2px solid var(--orange-color);
-    transition: all 0.5s ease;
   }
 
   .navLinks.active {
