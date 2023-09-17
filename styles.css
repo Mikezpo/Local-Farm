@@ -30,6 +30,7 @@ h2 {
   font-size: 3.3rem;
   text-align: center;
   padding: 3em 0;
+  color: var(--orange-color);
 }
 
 h3 {
@@ -59,8 +60,13 @@ li {
   letter-spacing: 0.2rem;
 }
 
-.headerTextH3 {
+.headerText {
   color: var(--orange-color);
+}
+
+.headerTextH3 {
+  color: var(--blue-dark-color);
+  font-size: 3rem;
 }
 
 input,
@@ -208,7 +214,7 @@ img {
 }
 
 .logoNav:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   
 }
 
@@ -386,7 +392,7 @@ img {
 }
 
 #signUp:hover, #signIn:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .signInResetPass {
@@ -396,7 +402,7 @@ img {
 
 .signInResetPass:hover {
   border-bottom: none;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .signInBtn {
@@ -405,7 +411,7 @@ img {
 }
 
 .signInBtn:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   
 }
 
@@ -554,7 +560,7 @@ li {
 }
 
 li:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .navButton {
@@ -577,19 +583,19 @@ li:hover {
 }
 
 .navButton:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
   
 }
 
 
 /* -------- MAIN SECTION -------- */
 
-main {
+.mainPageTopImage {
   background: url("https://images.unsplash.com/photo-1498408040764-ab6eb772a145?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2344&q=80");
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 0px -100px;
+  background-attachment: fixed;
   height: 100rem;
 }
 
@@ -727,7 +733,11 @@ input {
 
 .boxSizes {
   background-image: url("https://images.unsplash.com/photo-1511735643442-503bb3bd348a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80");
-  background-color: #ffffff;
+  background-attachment: fixed;
+  background-position: 0px -100px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  /* background-color: #ffffff; */
 }
 
 .containerTwo {
@@ -741,6 +751,7 @@ input {
 
 .boxSizes h2 {
   color: var(--orange-color);
+  /* color: rgb(38, 147, 76); */
   text-align: center;
   padding-bottom: 3em;
 }
@@ -753,7 +764,7 @@ input {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.733);
+  background-color: rgba(255, 255, 255, 0.811);
 }
 
 .boxColumn {
@@ -818,13 +829,14 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 60rem;
-  text-align: center;
+  max-width: 70rem;
+  text-align: justify;
+  font-size: 2rem;
   margin: 0 auto 6em auto;
   padding: 0 4rem;
 }
 
-.boxSizes, .fruitVeggBox, .veggieBox, .fruitBox {
+.fruitVeggBox, .veggieBox, .fruitBox {
   background-attachment: fixed;
   background-position: center;
 }
@@ -879,7 +891,7 @@ input {
 .fruitContainer:hover {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 5px 20px #9ecaed;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .priceBox {
@@ -923,6 +935,7 @@ input {
 }
 
 .foodWasteText h2 {
+  color: white;
   padding-bottom: 1rem;
   text-align: left;
 }
@@ -957,7 +970,9 @@ input {
 }
 
 .foodWasteText > p {
-  padding-bottom: 3rem;
+  padding: 3rem 0;
+  text-align: justify;
+  font-weight: 600;
 }
 
 .moreAboutMission {
@@ -974,7 +989,7 @@ input {
   color: var(--blue-dark-color);
   border: 1px solid white;
   background-color: white;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* -------- LOCAL FARMS IMAGES AND RECIPES -------- */
@@ -1047,7 +1062,7 @@ input {
   border: 1px solid var(--orange-color);
   box-shadow: 0 5px 20px #9ecaed;
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: all 0.5s ease;
 }
 
@@ -1290,7 +1305,7 @@ footer a {
 }
 
 .socialMedia img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   filter: grayscale(0);
 }
 
@@ -1323,7 +1338,7 @@ footer a {
 }
 
 .footerList li:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 p.registered {
@@ -1510,7 +1525,7 @@ p.registered {
   }
 
   .logoNav a:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   .logoNav:hover {
