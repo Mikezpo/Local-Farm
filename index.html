@@ -30,7 +30,7 @@
             <div class="signAndLog navLinks">
               <ul class="account">
                 <li class="menu-list a">
-                  <a class="menuA" href="#" onclick="showModal('loginModal')">Log in</a>
+                  <a class="menuA" id="loginLink" href="#" onclick="showModal('loginModal')">Log in</a>
                   <span>&#8196&#8196|</span>
                 </li>
                 <li class="menu-list a">
@@ -65,7 +65,8 @@
                         <input class="signInInput" type="email" placeholder="Email" />
                         <input class="signInInput" type="password" placeholder="Password" />
                         <button class="signInBtn">Sign Up</button>
-                        <button class="new-sign-buttons" id="newSignIn">Sign in</button>
+                        <span class="hasAccount" >Already have an account?</span>
+                        <button class="new-sign-button" id="mobileSignIn">Sign in</button>
                       </form>
                     </div>
                     <div class="form-container sign-in-container">
@@ -83,7 +84,8 @@
                         <input class="signInInput" type="password" placeholder="Password" />
                         <a class="signInResetPass" href="#">Forgot your password?</a>
                         <button class="signInBtn">Sign In</button>
-                        <button class="new-sign-buttons" id="newSignUp">Create Account</button>
+                        <span class="hasAccount" >Create an account</span>
+                        <button class="new-sign-button" id="mobileSignUp">Sign Up</button>
                       </form>
                     </div>
                     <div class="overlay-container">

@@ -30,8 +30,7 @@
             <div class="signAndLog navLinks">
               <ul class="account">
                 <li class="menu-list a">
-                  <a class="menuA" href="#" onclick="showModal('loginModal')">Log in</a>
-                  <span>&#8196&#8196|</span>
+                  <a class="menuA" id="loginLink" href="#" onclick="showModal('loginModal')">Log in</a>
                 </li>
                 <li class="menu-list a">
                   <a href="#cart"><img src="https://cdn-icons-png.flaticon.com/512/2169/2169842.png" alt=""></a>
@@ -61,6 +60,8 @@
                         <input class="signInInput" type="email" placeholder="Email" />
                         <input class="signInInput" type="password" placeholder="Password" />
                         <button class="signInBtn">Sign Up</button>
+                        <span class="hasAccount" >Already have an account?</span>
+                        <button class="new-sign-button" id="mobileSignIn">Sign in</button>
                       </form>
                     </div>
                     <div class="form-container sign-in-container">
@@ -74,10 +75,12 @@
                           <a class="signInSocial" href="#" class="social"><img src="	https://cdn-icons-png.flaticon.com/512/145/145807.png" alt=""></a>
                         </div>
                         <span class="signInSpan">or use your account</span>
-                        <input class="signInInput" class="signInInput" type="email" placeholder="Email" />
-                        <input class="signInInput" class="signInInput" type="password" placeholder="Password" />
+                        <input class="signInInput" type="email" placeholder="Email" />
+                        <input class="signInInput" type="password" placeholder="Password" />
                         <a class="signInResetPass" href="#">Forgot your password?</a>
                         <button class="signInBtn">Sign In</button>
+                        <span class="hasAccount" >Create an account</span>
+                        <button class="new-sign-button" id="mobileSignUp">Sign Up</button>
                       </form>
                     </div>
                     <div class="overlay-container">

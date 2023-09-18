@@ -367,6 +367,10 @@ img {
 }
 
 .signInBtn {
+  margin: 2rem 0 1rem 0;
+}
+
+.signInBtn, .new-sign-button {
 	border-radius: 20px;
 	border: 1px solid var(--orange-color);
 	background-color: var(--orange-color);
@@ -376,13 +380,14 @@ img {
 	padding: 1.2rem 4.5rem;
 	letter-spacing: 0.2rem;
 	text-transform: uppercase;
-  transition: transform 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  cursor: pointer;
 }
 
-.signInBtn:hover {
+.signInBtn:hover, .new-sign-button:hover {
   background: var(--blue-dark-color);
   border: 1px solid var(--blue-dark-color);
-  
+  transform: scale(1.05);
 }
 
 #signUp, #signIn {
@@ -404,7 +409,7 @@ img {
 
 .signInResetPass {
   font-size: 1.2rem;
-  margin: 2rem 0;
+  margin: 1rem 0 0 0;
 }
 
 .signInResetPass:hover {
@@ -419,7 +424,6 @@ img {
 
 .signInBtn:hover {
   transform: scale(1.05);
-  
 }
 
 .signInBtn:active {
@@ -428,6 +432,13 @@ img {
 
 .signInBtn:focus {
 	outline: none;
+}
+
+.hasAccount {
+  display: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 1rem 0;
 }
 
 .ghost {
@@ -591,12 +602,15 @@ li:hover {
   width: 100%;
   background: black;
   border-radius: 10px;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 
-.navButton:hover{
-  transform: scale(1.05);
-  
+.navButton:hover .bar:nth-child(1) {
+  transform: translateY(-0.5rem);
+}
+
+.navButton:hover .bar:nth-child(3) {
+  transform: translateY(0.5rem);
 }
 
 
@@ -691,6 +705,10 @@ input {
   caret-color: var(--blue-color);
 }
 
+.headerSpan {
+  color: var(--orange-color);
+}
+
 /* -------- HOW IT WORKS SECTION -------- */
 
 .howItWorks {
@@ -758,7 +776,7 @@ input {
   align-items: center;
   flex-wrap: wrap;
   max-width: 60em;
-  margin: 0 auto 4em auto;
+  margin: 0 auto 10rem auto;
 }
 
 .boxSizes h2 {
@@ -769,8 +787,8 @@ input {
 }
 
 .box {
-  width: 25em;
-  height: 25em;
+  width: 30rem;
+  height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -965,7 +983,7 @@ input {
   margin: 0 auto;
   padding: 0 4rem 6rem 4rem;
   max-width: 60rem;
-  text-align: center;
+  text-align: justify;
   font-style: italic;
   font-size: 1.6rem;
   font-weight: 400;
@@ -1539,7 +1557,7 @@ p.registered {
     width: 100%; 
   }
 
-  .new-sign-buttons {
+  .new-sign-button, .hasAccount {
     display: block;
   }
 
@@ -1551,6 +1569,15 @@ p.registered {
     padding-left: 0;
     margin-right: 2rem;
     margin-left: 2rem;
+  }
+
+  .close {
+    position: absolute !important;
+    left: 94%;
+  }
+
+  .sign-up-container {
+    opacity: 1;
   }
 
 }
@@ -1620,15 +1647,26 @@ p.registered {
     display: none;
   }
 
+  .close, .hasAccount {
+    display: block!important;
+  }
+
   .navButton {
     display: flex;
-    margin: 1rem 0;
+    margin: 0.5rem 0 0;
   }
 
   .navButton:hover {
     border: none;
   }
 }
+
+@media screen and (max-width: 705px) {
+  .headerText {
+    margin: 2rem 0;
+    padding: 4rem 0;
+    }
+  }
 
 @media screen and (max-width: 670px) {
   
@@ -1637,6 +1675,7 @@ p.registered {
   }
 
   .containerTwo {
+    margin: 0 auto;
     flex-direction: column;
     width: 100%;
   }
@@ -1644,7 +1683,6 @@ p.registered {
   .boxImage {
     display: none;
   }
-
 
   .contactUsDiv {
     flex-direction: column;
@@ -1687,9 +1725,21 @@ p.registered {
   }
 } */
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
 
-  .container {
-    padding-top: 2em;
+  .boxSizes {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
+
+  .box {
+    width: 100%;
+  }
+
+  .selectRecipes ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
 }

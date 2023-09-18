@@ -7,14 +7,18 @@ const navbarLinks = document.getElementsByClassName('navLinks')[0];
 const menuItems = document.querySelectorAll('.menu-list a');
 for (const item of menuItems) {
   item.addEventListener('click', () => {
-    // Close the menu when an item is clicked
-    navbarLinks.classList.remove('active');
-    toggle.checked = false;
+    // If the clicked item is NOT the loginLink
+    if(item.id !== 'loginLink') {
+      // Close the menu when an item is clicked
+      navbarLinks.classList.remove('active');
+      toggle.checked = false;
+    }
   });
 }
 
-toggleButton.addEventListener('click', () => {
+toggleButton.addEventListener('click', (event) => {
   navbarLinks.classList.toggle('active');
+  event.stopPropagation();
 });
 
 
@@ -25,7 +29,7 @@ document.addEventListener('click', (event) => {
 
   if (!isClickInsideMenu && !isClickOnButton) {
     navbarLinks.classList.remove('active');
-    toggleButton.checked = false;
+    // toggleButton.checked = false;
   }
 });
 
@@ -50,6 +54,25 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
+
+// Mobile Sign in Form
+
+const mobileSignUpButton = document.getElementById('mobileSignUp');
+const mobileSignInButton = document.getElementById('mobileSignIn');
+const signUpContainer = document.querySelector('.sign-up-container');
+const signInContainer = document.querySelector('.sign-in-container');
+
+mobileSignUpButton.addEventListener('click', () => {
+    signUpContainer.style.display = 'block';
+    signInContainer.style.display = 'none';
+});
+
+mobileSignInButton.addEventListener('click', () => {
+    signUpContainer.style.display = 'none';
+    signInContainer.style.display = 'block';
+});
+
+
 
 // Event listener to close the form upon click on 'Escape'
 document.addEventListener('keydown', function(event) {
