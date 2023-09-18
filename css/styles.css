@@ -253,7 +253,7 @@ img {
 .modal-content {
   background: none;
   margin: 10rem auto;
-  padding: 4rem 2rem;
+  padding: 4rem 0;
   max-width: 90rem;
 }
 
@@ -466,13 +466,28 @@ img {
   transition: all 0.5s ease-in-out;
 }
 
-.new-sign-buttons {
+.new-sign-button {
   display: none;
 }
 
 .signInInput:focus {
   outline: 2px solid #9ecaed;
   box-shadow: 0px 0px 20px #9ecaed;
+}
+
+#togglePassword {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  margin: 0 auto;
+  top: -4.6%;
+  right: -40%;
+  transform: translateY(-50%);
+}
+
+#passwordField {
+  padding-right: 0;
 }
 
 @keyframes show {
@@ -1136,7 +1151,7 @@ input {
 
 .fiveStar img {
   margin: 0 1rem;
-  width: clamp(5rem, 0.5vw, 10rem);
+  width: clamp(3.5rem, 0.5vw, 10rem);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -1144,8 +1159,8 @@ input {
 
 .johnSmithReview {
   max-width: 40rem;
-  margin: 6rem 2rem 0 2rem;
-  text-align: center;
+  margin: 6rem 4rem 0 4rem;
+  text-align: justify;
 }
 
 /* -------- CONTACT US AND FOOTER -------- */
@@ -1549,12 +1564,12 @@ p.registered {
     display: flex !important;
     flex-direction: column !important;
     max-width: 60rem;
-    
+    min-height: 60rem;
   }
   
   .sign-in-container,
   .sign-up-container {
-    width: 100%; 
+    width: 100%;
   }
 
   .new-sign-button, .hasAccount {

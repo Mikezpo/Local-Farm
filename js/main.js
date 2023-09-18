@@ -72,12 +72,28 @@ mobileSignInButton.addEventListener('click', () => {
     signInContainer.style.display = 'block';
 });
 
-
-
 // Event listener to close the form upon click on 'Escape'
 document.addEventListener('keydown', function(event) {
   if (event.key === 'Escape' && document.getElementById('loginModal').style.display === 'block') {
     hideModal('loginModal');
+  }
+});
+
+// Hide/Show password Sign in Form
+
+document.getElementById('togglePassword').addEventListener('click', function() {
+  const passwordField = document.getElementById('passwordField');
+  const icon = this.querySelector('i');
+  
+  // Check the current type of the input field
+  if (passwordField.type === 'password') {
+      passwordField.type = 'text';  
+      icon.classList.remove('fa-eye');  // Remove the "fa-eye" class
+      icon.classList.add('fa-eye-slash');  // Add the "fa-eye-slash" class
+  } else {
+      passwordField.type = 'password';  
+      icon.classList.remove('fa-eye-slash');  // Remove the "fa-eye-slash" class
+      icon.classList.add('fa-eye');  // Add the "fa-eye" class
   }
 });
 
