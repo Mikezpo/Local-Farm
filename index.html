@@ -10,10 +10,10 @@
     <title>Local Farm</title>
 
     <!-- external CSS link -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -42,12 +42,15 @@
               <!-- LOG IN -->
               <div id="loginModal" class="modal">
                 <div class="modal-content">
-                  <span class="close" onclick="hideModal('loginModal')">&times;</span>
+                  
                   <!-- Log in form here -->
 
 
                   <div class="container" id="container">
+                    <span class="close" onclick="hideModal('loginModal')">&times;</span>
+                    
                     <div class="form-container sign-up-container">
+                      
                       <form class="signInForm" action="#">
                         <h2 class="signInHeader">Create Account</h2>
                         <div class="social-container">
@@ -62,6 +65,7 @@
                         <input class="signInInput" type="email" placeholder="Email" />
                         <input class="signInInput" type="password" placeholder="Password" />
                         <button class="signInBtn">Sign Up</button>
+                        <button class="new-sign-buttons" id="newSignIn">Sign in</button>
                       </form>
                     </div>
                     <div class="form-container sign-in-container">
@@ -79,17 +83,18 @@
                         <input class="signInInput" type="password" placeholder="Password" />
                         <a class="signInResetPass" href="#">Forgot your password?</a>
                         <button class="signInBtn">Sign In</button>
+                        <button class="new-sign-buttons" id="newSignUp">Create Account</button>
                       </form>
                     </div>
                     <div class="overlay-container">
                       <div class="overlay">
                         <div class="overlay-panel overlay-left">
-                          <h2 class="signInHeader">Welcome Back!</h2>
+                          <h2 class="signInHeader greeting">Welcome Back!</h2>
                           <p class="signInDescription" >To keep connected with us please login with your personal info</p>
                           <button class="ghost" id="signIn">SIGN IN</button>
                         </div>
                         <div class="overlay-panel overlay-right">
-                          <h2 class="signInHeader">Hi there!</h2>
+                          <h2 class="signInHeader greeting">Hi there!</h2>
                           <p class="signInDescription">Enter your personal details and start journey with us</p>
                           <button class="ghost" id="signUp">SIGN UP</button>
                         </div>
@@ -562,13 +567,10 @@
         </ul>
       </div>
       
-      <!-- <div class="bioFood">
-        <img src="https://www.aldi.pt/content/dam/aldi/global/themenwelten/obst-und-gemuesewelt/zertifikate-und-siegel/Bio_logo.png/jcr:content/renditions/opt.736w.png.res/1512550283303/opt.736w.png" alt="">
-      </div> -->
     </div>
       <p class="registered">Copyright &copy; 2022 Local Farm | Code and Design by: <a href="https://joseoliveira.netlify.app/">Jose Oliveira</a></p>
-      <!-- | Images: <a href="https://unsplash.com/">Unsplash</a> -->
+
     </footer>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

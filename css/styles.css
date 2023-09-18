@@ -251,28 +251,29 @@ img {
 }
 
 .modal-content {
-  background-color: none;
-  margin: 10% auto;
+  background: none;
+  margin: 10rem auto;
   padding: 4rem 2rem;
-  /* border: 1px solid #888; */
   max-width: 90rem;
 }
 
 .close {
   color: black;
   position: absolute;
-  z-index: 11;
+  left: 96%;
   top: 0;
-  right: 0;
-  margin: 6rem 4rem 0 0;
+  z-index: 99;
+  text-align: right;
   font-size: 3.2rem;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .close:hover,
 .close:focus {
-  color: var(--orange-color);
+  color: var(--blue-color);
+  transform: scale(1.05);
   text-decoration: none;
   cursor: pointer;
 }
@@ -286,10 +287,12 @@ img {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 	0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
+  top: 0;
 	overflow: hidden;
 	width: 100%;
-	max-width: 100%;
-	min-height: 480px;
+	max-width: 80rem;
+  min-height: 50rem;
+	
   
 }
 
@@ -328,6 +331,10 @@ img {
 .signInHeader {
 	text-align: center;
   padding: 0;
+}
+
+.greeting {
+  color: white;
 }
 
 .signInDescription {
@@ -445,11 +452,16 @@ img {
 	padding: 1rem;
 	margin: 1rem 0;
 	width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.new-sign-buttons {
+  display: none;
 }
 
 .signInInput:focus {
   outline: 2px solid #9ecaed;
-  box-shadow: 10px 0px 10px #9ecaed;
+  box-shadow: 0px 0px 20px #9ecaed;
 }
 
 @keyframes show {
@@ -1490,10 +1502,12 @@ p.registered {
 
 
 /* -------- MEDIA QUERIES -------- */
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 920px) {
 
   /* SIGN IN / LOG IN FORM */
   /* EITHER TURN IN VERTICALLY OR CHANGE Z-INDEX TO SWAP */
+  
+
 
 }
 
@@ -1510,6 +1524,35 @@ p.registered {
   .foodWasteText h2 {
     text-align: center;
   }
+
+  /* Sign in */
+
+  #container {
+    display: flex !important;
+    flex-direction: column !important;
+    max-width: 60rem;
+    
+  }
+  
+  .sign-in-container,
+  .sign-up-container {
+    width: 100%; 
+  }
+
+  .new-sign-buttons {
+    display: block;
+  }
+
+  .overlay-container {
+    display: none;
+  }
+
+  .modal-content {
+    padding-left: 0;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -1589,6 +1632,9 @@ p.registered {
 
 @media screen and (max-width: 670px) {
   
+  body {
+    font-size: 14px;
+  }
 
   .containerTwo {
     flex-direction: column;
@@ -1631,6 +1677,15 @@ p.registered {
     min-width: 10em;
   }
 }
+
+/* To be checked if necessary to add this change */
+
+/* @media only screen and (max-device-width: 490px) {
+  
+  .mainPageTopImage, .boxSizes, .fruitVeggBox, .veggieBox, .fruitBox, .foodWaste {
+    background-attachment: scroll;
+  }
+} */
 
 @media screen and (max-width: 360px) {
 

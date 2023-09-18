@@ -51,6 +51,13 @@ signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
 
+// Event listener to close the form upon click on 'Escape'
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape' && document.getElementById('loginModal').style.display === 'block') {
+    hideModal('loginModal');
+  }
+});
+
 // Recipes Images
 
 // Assigned variables
