@@ -1,0 +1,111 @@
+export const recipeCategories = { all: 'All recipes', breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner', dessert: 'Sweet treats', shake: 'Smoothies' };
+export const recipes = [
+  {
+    id: 'garden-bowl', name: 'The anything-goes garden bowl', category: 'lunch', time: '30 min', serves: 2,
+    image: 'photo-1546069901-ba9599a7e63c', description: 'A colourful lunch that makes room for whatever is in your box.',
+    ingredients: ['150 g couscous', '2 carrots, chopped', '1 courgette, chopped', '1 tin chickpeas, drained', 'A handful of salad leaves', '2 tbsp olive oil', 'Juice of ½ lemon', 'Salt and pepper'],
+    steps: ['Heat the oven to 200°C. Toss the carrots, courgette, and chickpeas with half the oil and a pinch of salt. Roast for 25 minutes, turning halfway.', 'Prepare the couscous with boiling water according to the pack instructions. Fluff with a fork.', 'Divide the leaves and couscous between two bowls. Add the roast vegetables, then dress with the remaining oil, lemon juice, and pepper.'],
+  },
+  {
+    id: 'banana-oat-pancakes', name: 'Sunday banana & oat pancakes', category: 'breakfast', time: '20 min', serves: 2,
+    image: 'photo-1528207776546-365bb710ee93', description: 'One very ripe banana, one happy stack, and a slower kind of morning.',
+    ingredients: ['1 large ripe banana', '100 g rolled oats', '2 eggs', '100 ml milk or oat drink', '1 tsp baking powder', '1 tsp cooking oil', 'Fresh berries and a little honey, to serve'],
+    steps: ['Blend the banana, oats, eggs, milk, and baking powder into a thick batter. Leave it to rest for 5 minutes while a non-stick pan warms over a medium heat.', 'Brush the pan with a little oil. Add small spoonfuls of batter and cook for 2–3 minutes until bubbles appear and the edges firm up. Flip and cook for another 2 minutes, until cooked through.', 'Repeat with the remaining batter. Stack the pancakes and serve with fresh berries and a little honey.'],
+  },
+  {
+    id: 'pumpkin-lentil-soup', name: 'Golden pumpkin & lentil soup', category: 'lunch', time: '40 min', serves: 4,
+    image: 'photo-1642497394078-4794e837019c', description: 'A warm, generous bowl for chilly afternoons and extra pumpkin.',
+    ingredients: ['500 g pumpkin or squash, peeled and cubed', '2 carrots, chopped', '1 onion, chopped', '2 garlic cloves, chopped', '100 g dried red lentils, rinsed', '1 litre vegetable stock', '1 tbsp olive oil', '1 tsp ground cumin', 'Fresh parsley and black pepper'],
+    steps: ['Warm the oil in a large saucepan. Soften the onion and carrots for 7–8 minutes, then stir in the garlic and cumin for a minute.', 'Add the pumpkin, lentils, and stock. Bring to a simmer and cook gently for 20–25 minutes, until the vegetables and lentils are tender.', 'Take the pan off the heat and blend until smooth. Add a splash of water if the soup is too thick. Season with black pepper and finish with parsley.'],
+  },
+  {
+    id: 'avocado-egg-toast', name: 'Avocado & egg garden toast', category: 'breakfast', time: '15 min', serves: 2,
+    image: 'photo-1482049016688-2d3e1b311543', description: 'Crisp toast, creamy avocado, and a little green goodness to start the day.',
+    ingredients: ['4 slices wholegrain bread', '1 ripe avocado', '2 eggs', 'A handful of baby spinach', 'Juice of ½ lemon', '1 tsp olive oil', 'Salt and black pepper'],
+    steps: ['Lower the eggs into gently boiling water and cook for 9 minutes. Cool under running water, peel, and slice.', 'Toast the bread. Mash the avocado with the lemon juice, olive oil, and a little salt and pepper.', 'Spread the avocado over the toast, add the spinach, and finish with the sliced eggs. Serve while the toast is still crisp.'],
+  },
+  {
+    id: 'lemon-pasta', name: 'Garden greens & tomato pasta', category: 'dinner', time: '25 min', serves: 2,
+    image: 'photo-1473093295043-cdd812d0e601', description: 'A bright little pesto for greens that need a good home.',
+    ingredients: ['180 g pasta', '2 handfuls spinach', 'A handful of fresh basil', '150 g cherry tomatoes, halved', '1 garlic clove', '3 tbsp olive oil', '2 tbsp toasted sunflower seeds', 'Zest and juice of ½ lemon', 'Salt and pepper'],
+    steps: ['Cook the pasta in salted water according to the pack instructions. Reserve a mug of the cooking water before draining.', 'Blend the spinach, basil, garlic, oil, seeds, and lemon zest and juice into a rough pesto. Loosen with a splash of cooking water.', 'Toss the pasta with the pesto and tomatoes. Add a little more cooking water if needed, season to taste, and serve.'],
+  },
+  {
+    id: 'rainbow-chickpea-salad', name: 'Crunchy rainbow chickpea salad', category: 'lunch', time: '15 min', serves: 2,
+    image: 'photo-1512621776951-a57141f2eefd', description: 'All the colours of your box, with a bright lemon dressing.',
+    ingredients: ['1 tin chickpeas, drained and rinsed', '2 handfuls salad leaves', '1 carrot, grated', '¼ small red cabbage, finely shredded', '1 yellow pepper, sliced', '100 g cherry tomatoes, halved', '1 avocado, sliced', '2 tbsp olive oil', 'Juice of 1 lemon', 'Salt and pepper'],
+    steps: ['Wash and dry the salad leaves. Prepare the carrot, cabbage, pepper, tomatoes, and avocado, then divide between two bowls with the chickpeas.', 'Whisk the olive oil and lemon juice together with a pinch of salt and pepper.', 'Spoon the dressing over the bowls just before serving. Gently toss, keeping a little of each colourful ingredient on top.'],
+  },
+  {
+    id: 'mushroom-pepper-bowls', name: 'Smoky mushroom & pepper bowls', category: 'dinner', time: '35 min', serves: 2,
+    image: 'photo-1518779578993-ec3579fee39f', description: 'A colourful, smoky supper that gives mushrooms the starring role.',
+    ingredients: ['150 g brown rice', '250 g mushrooms, thickly sliced', '1 red pepper, sliced', '1 red onion, sliced', '150 g cherry tomatoes, halved', '2 tbsp olive oil', '1 tsp smoked paprika', '½ tsp ground cumin', '100 g plain yoghurt', 'Juice of ½ lime', 'Fresh coriander, optional'],
+    steps: ['Cook the rice according to the pack instructions. Stir the lime juice into the yoghurt and set aside.', 'Heat the oil in a large pan. Cook the onion and pepper for 6–7 minutes, then add the mushrooms and cook for another 6 minutes. Stir in the paprika, cumin, and tomatoes, and cook for 3 more minutes.', 'Divide the rice and vegetables between bowls. Add a spoonful of lime yoghurt and finish with coriander if using.'],
+  },
+  {
+    id: 'berry-breakfast', name: 'Berry & banana breakfast bowl', category: 'breakfast', time: '10 min', serves: 2,
+    image: 'photo-1455099229380-7b52707e356a', description: 'A bright beginning for ripe bananas and a handful of berries.',
+    ingredients: ['2 ripe bananas', '200 g mixed berries, fresh or frozen', '150 g plain yoghurt', 'A splash of milk or oat drink', '4 tbsp granola', 'Coconut flakes or seeds, optional'],
+    steps: ['Reserve a few berries and half a banana for the topping. Blend the rest with the yoghurt and a small splash of milk until thick and smooth.', 'Divide between two bowls. Slice the reserved banana and arrange on top with the berries.', 'Scatter over the granola and a few coconut flakes or seeds. Serve straight away.'],
+  },
+  {
+    id: 'potato-onion-pizza', name: 'Golden potato & red onion pizza', category: 'dinner', time: '35 min', serves: 2,
+    image: 'photo-1565299624946-b28f40a0ae38', description: 'A few humble potatoes, a crisp base, and a very good night in.',
+    ingredients: ['400 g ready-made pizza dough', '200 g potatoes, very thinly sliced', '1 small red onion, thinly sliced', '4 tbsp tomato passata', '100 g mozzarella, torn', '1 tbsp olive oil', '1 tsp chopped rosemary', 'Salt and black pepper'],
+    steps: ['Heat the oven to 220°C and place a baking tray inside to warm. Simmer the potato slices in water for 5 minutes, then drain well and pat dry.', 'Roll the dough onto baking paper. Spread with the passata and scatter over the potatoes, onion, and mozzarella. Drizzle with oil and add the rosemary, salt, and pepper.', 'Carefully slide the pizza and paper onto the hot tray. Bake for 15–18 minutes until the base is crisp, the cheese is bubbling, and the potatoes are golden.'],
+  },
+  {
+    id: 'berry-pots', name: 'Berry & oat yoghurt pots', category: 'dessert', time: '15 min', serves: 2,
+    image: 'photo-1543573852-1a71a6ce19bc', description: 'A little something sweet, with plenty of room for ripe fruit.',
+    ingredients: ['200 g berries, fresh or thawed', '250 g thick plain yoghurt', '40 g rolled oats', '1 tbsp honey or maple syrup', '1 tsp lemon juice', 'A small handful of nuts, optional'],
+    steps: ['Toast the oats in a dry pan over a medium heat for 4–5 minutes, stirring often. Set aside to cool.', 'Mash most of the berries with the lemon juice and honey or maple syrup. Leave a few whole for the top.', 'Layer the yoghurt and mashed berries in two glasses or jars. Finish with the cooled oats, whole berries, and nuts if using.'],
+  },
+  {
+    id: 'stuffed-avocados', name: 'Tomato & feta stuffed avocados', category: 'lunch', time: '15 min', serves: 2,
+    image: 'photo-1546554137-f86b9593a222', description: 'A little chopping, a little crumbling, and lunch is ready.',
+    ingredients: ['2 ripe avocados', '150 g cherry tomatoes, finely chopped', '75 g feta, crumbled', '1 tbsp chopped fresh parsley', 'Juice of ½ lemon', '2 tsp olive oil', 'Black pepper', 'Wholegrain bread, to serve'],
+    steps: ['Mix the tomatoes, feta, parsley, olive oil, and half the lemon juice in a bowl. Season with black pepper.', 'Halve the avocados and remove the stones. Scoop a small spoonful of flesh from each centre to make room for the filling, then chop it and fold it into the tomato mixture.', 'Brush the avocado halves with the remaining lemon juice. Spoon in the filling and serve with bread.'],
+  },
+  {
+    id: 'smoky-tofu-corn', name: 'Smoky tofu & sweetcorn bowls', category: 'dinner', time: '35 min', serves: 2,
+    image: 'photo-1585238342070-61e1e768b1ff', description: 'Golden tofu, sweet corn, and greens for a satisfyingly full bowl.',
+    ingredients: ['300 g firm tofu, drained and cut into thick strips', '150 g quinoa', '1 small broccoli, cut into florets', '150 g sweetcorn kernels', '1 avocado, sliced', '2 tbsp soy sauce', '1 tbsp olive oil', '1 tsp smoked paprika', 'Juice of 1 lime'],
+    steps: ['Heat the oven to 220°C. Pat the tofu dry and toss with the soy sauce, half the oil, and smoked paprika. Spread on a lined tray and roast for 20–25 minutes, turning halfway.', 'Cook the quinoa according to the pack instructions. Toss the broccoli with the remaining oil and add it to the tofu tray for the final 12 minutes. Warm the sweetcorn in a small pan with a splash of water.', 'Divide the quinoa, tofu, broccoli, and corn between bowls. Add the avocado and finish with lime juice.'],
+  },
+  {
+    id: 'apple-skillet-pancake', name: 'Apple & cinnamon skillet pancake', category: 'dessert', time: '35 min', serves: 4,
+    image: 'photo-1575561524285-ad2a1f748fcf', description: 'A golden, puffy pancake made for sharing straight from the pan.',
+    ingredients: ['2 apples, cored and thinly sliced', '2 eggs', '100 g plain flour', '150 ml milk', '20 g butter', '1 tbsp brown sugar', '½ tsp cinnamon', 'A pinch of salt', 'Fresh figs or a little honey, optional'],
+    steps: ['Heat the oven to 200°C. Whisk the eggs, flour, milk, and salt into a smooth batter.', 'Melt the butter in a 22 cm oven-safe frying pan. Add the apples, sugar, and cinnamon, and cook gently for 5 minutes. Pour the batter over the apples.', 'Transfer the pan to the oven and bake for 18–22 minutes, until puffed, golden, and set in the centre. Let it cool for a few minutes, then finish with sliced figs or honey if you like.'],
+  },
+  {
+    id: 'green-smoothie', name: 'The use-it-up green smoothie', category: 'shake', time: '5 min', serves: 2,
+    image: 'photo-1628557044797-f21a177c37ec', description: 'A fresh home for an extra apple and a handful of greens.',
+    ingredients: ['1 apple, cored and chopped', '½ cucumber, chopped', '1 handful spinach', '1 ripe banana', '250 ml cold water', 'A small piece of peeled ginger, optional'],
+    steps: ['Wash the apple, cucumber, and spinach. Core the apple, peel the banana, and roughly chop the fruit and cucumber.', 'Put everything in a blender with the water and ginger, if using. Blend until smooth.', 'Add a little more water if you prefer a thinner drink, divide between two glasses, and enjoy straight away.'],
+  },
+  {
+    id: 'garden-noodles', name: 'Quick sesame garden noodles', category: 'dinner', time: '20 min', serves: 2,
+    image: 'photo-1516901121982-4ba280115a36', description: 'A colourful supper for the last few vegetables in your box.',
+    ingredients: ['180 g noodles', '2 carrots, cut into thin strips', '1 courgette, cut into thin strips', '1 pepper, sliced', '2 tbsp soy sauce', '1 tbsp sesame oil', '1 tbsp cooking oil', 'Juice of ½ lime', 'Sesame seeds, to finish'],
+    steps: ['Prepare the noodles according to the pack instructions, then drain and set aside.', 'Heat the cooking oil in a large pan. Stir-fry the carrots and pepper for 4 minutes, then add the courgette and cook for 2 more minutes.', 'Add the noodles, soy sauce, sesame oil, and lime juice. Toss over the heat for a minute, then divide between bowls and finish with sesame seeds.'],
+  },
+  {
+    id: 'citrus-yoghurt-tarts', name: 'Little citrus yoghurt tarts', category: 'dessert', time: '15 min', serves: 4,
+    image: 'photo-1560180474-e8563fd75bab', description: 'A bright little treat for sweet oranges and an unhurried afternoon.',
+    ingredients: ['4 small ready-baked pastry tart cases', '250 g thick Greek yoghurt', '1 tbsp honey', 'Finely grated zest of ½ lemon', '1 large orange', 'A handful of fresh berries'],
+    steps: ['Stir the yoghurt, honey, and lemon zest together until smooth.', 'Peel the orange, removing as much white pith as possible. Cut into small segments and let any excess juice drain away.', 'Spoon the yoghurt into the tart cases and top with the orange and berries. Fill just before serving to keep the pastry crisp.'],
+  },
+  {
+    id: 'berry-banana-smoothie', name: 'Berry & banana blender smoothie', category: 'shake', time: '5 min', serves: 2,
+    image: 'photo-1600718374662-0483d2b9da44', description: 'A five-minute rescue for ripe bananas and the last of your berries.',
+    ingredients: ['1 ripe banana', '200 g mixed berries, fresh or frozen', '250 ml milk or oat drink', '100 g plain yoghurt', '2 tbsp rolled oats'],
+    steps: ['Peel the banana and roughly chop it. Wash the berries if using fresh fruit.', 'Blend the fruit, milk, yoghurt, and oats until smooth and creamy.', 'Add a little more milk if needed, divide between two glasses, and enjoy straight away.'],
+  },
+  {
+    id: 'peach-oat-shake', name: 'Peach & oat breakfast shake', category: 'shake', time: '10 min', serves: 2,
+    image: 'photo-1505252585461-04db1eb84625', description: 'Soft peaches and a few pantry staples, blended into something lovely.',
+    ingredients: ['2 ripe peaches, stoned and chopped', '1 ripe banana', '250 ml oat drink', '3 tbsp rolled oats', '2 tbsp plain yoghurt', 'A pinch of cinnamon, optional'],
+    steps: ['Soak the oats in the oat drink for 5 minutes while you prepare the peaches and peel the banana.', 'Put the soaked oats, oat drink, fruit, and yoghurt in a blender. Add cinnamon if using and blend until smooth.', 'Loosen with another splash of oat drink if you like. Pour into two glasses and serve immediately.'],
+  },
+];

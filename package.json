@@ -1,0 +1,12 @@
+{
+  "name": "local-farm",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A seasonal produce storefront built with HTML, CSS, and JavaScript.",
+  "scripts": {
+    "dev": "python3 -m http.server 8765 --bind 127.0.0.1",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" }
+}
